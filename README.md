@@ -19,7 +19,7 @@
     + From terminal (remote).
     + From the screen and controller.
 - We could add food by scanning the products:
-    + Like "Juka" (app) using the barcodes.
+    + Like "Yuka" (app) using the barcodes.
     + Text recognition for expiration date.
 - Temperature management:
     + On screen controls.
