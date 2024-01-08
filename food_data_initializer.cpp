@@ -33,7 +33,7 @@ float getRandomFloat(float min, float max)
     return (max - min) * ((float)rand() / RAND_MAX) + min;
 }
 
-// Fill the text file with random food data
+// Fill a text file with food attributes randomly determined, one row for each food item
 void initRandomFoodItemsFile(const string &fileName, int numItems)
 {
     // Seed the random number generator with the current time
@@ -64,7 +64,7 @@ void initRandomFoodItemsFile(const string &fileName, int numItems)
     }
     else
     {
-        cout << "Error opening file.\n";
+        cout << "Error opening file '" << fileName << "'.\n";
     }
 }
 
