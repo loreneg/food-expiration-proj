@@ -10,7 +10,7 @@
 2. [Presentation](#presentation)
 3. [Functionalities description](#functionalities-description)
 4. [Requirements](#requirements)
-5. [Build with](#programming-languages)
+5. [Build with](#programming-language)
 6. [Team members & contributions](#team-members)
 
 </details>
