@@ -12,7 +12,7 @@
 
 short description
 
-<img src="Images/fridgeLogo.png" alt="Logo" width="140" height="80">
+<img src="/Images/fridgeLogo.png" width="140" height="80">
 
 
 ## Functionalities description
