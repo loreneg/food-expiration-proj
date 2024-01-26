@@ -11,17 +11,27 @@
 
 ## About
 
+|`Embedded software for the Internet of Things project`|
+:-:
+
 <div align="center">
   <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
 </div>
 
-Welcome to ***IoT Fridge Guardian***, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
+Welcome to **IoT Fridge Guardian**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
-
+Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
 ## Functionalities description
 
-description
+1. **Intuitive food management menu**  
+Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
+
+2. **Timely expiry alerts**  
+Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
+
+3. **Visual expiry indication**  
+View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 
 ## Presentation
@@ -32,62 +42,20 @@ description
 
 ## Requirements
 
-### Hardare
+`Hardware`
+- [X] MSP432-P401R microcontroller.
+- [X] Booster board with a screen, analog inputs, and buttons.
+- [X] Red LED for visual indicators.
+- [X] Real-time clock (RTC) module for time-based alerts.
+- [X] Wireless Network Internet Controller (WNIC) module.
 
-...
-
-### Software
-
-...
-
-
-## Programming language(s)
-
-C, ...
+`Software`
+- [X] MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).
+- [X] Real-time clock (RTC) library for time tracking.
+- [X] Internet connectivity library or API.
+- [X] Online database service.
 
 
----
-`Embedded software for the Internet of Things`
+## Programming language
 
-## *General todo:*
-- *Set expiration date of food products.*
-- *Receive alert notification on our phone using Google home API.*
-
----
-
-## IDEAS
-- **Notifications before food expiring** (**any kind of signal from MSP** or Google Home).
-- **Food tracking**: what’s inside your fridge, we could use a file.
-- Fridge temperature, temperature and a humidity sensor.
-
----
-
-## USER INTERFACE
-- **We could add the food by hand**:
-    + From terminal (remote).
-    + From the screen and controller.
-- We could add food by scanning the products:
-    + Like "Juka" (app) using the barcodes.
-    + Text recognition for expiration date.
-- Temperature management:
-    + On screen controls.
-    + Bluetooth (concept).
-
----
-
-## REQUIREMENTS
-- Bar scanner
-- Camera (text recognition)
-- Temperature sensor
-- Humidity sensor
-- **MSP (led, speaker)**
-- **Booster board (screen, analogue, buttons)**
-- Wireless Network Internet Controller (WNIC)
-
----
-
-## *How do we store the data of the products?*  
-Database:
-- Online (we must buy a wireless adaptor for the MSP)
-- Via serial connection (see lecture 13's slides of the course)
-- Use an SD card (not very expensive)
+***C***  
