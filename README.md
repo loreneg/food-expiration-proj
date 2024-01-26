@@ -26,7 +26,7 @@ Welcome to <ins>**IoT Fridge Guardian**</ins>, an embedded software solution des
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
-<div markdown="1" align="right">
+<div align="right">
     
 [Return to Top](#table-of-contents)
 
