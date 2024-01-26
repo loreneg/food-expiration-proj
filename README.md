@@ -9,10 +9,10 @@
 5. [Build with](#programming-languages)
 
 
-## About
+# About
 
-|`Embedded software for the Internet of Things project`|
-:-:
+|             |`Embedded software for the Internet of Things project`|
+|:-:|:-:| 
 
 <div align="center">
   <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
@@ -22,7 +22,7 @@ Welcome to **IoT Fridge Guardian**, an embedded software solution designed for I
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
-## Functionalities description
+# Functionalities description
 
 1. **Intuitive food management menu**  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
@@ -34,13 +34,13 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 
-## Presentation
+# Presentation
 
 - Youtube: [video](...link)
 - Presentation: [slides](...link)
 
 
-## Requirements
+# Requirements
 
 `Hardware`
 - [X] MSP432-P401R microcontroller.
@@ -56,6 +56,6 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - [X] Online database service.
 
 
-## Programming language
+# Programming language
 
-***C***  
+***C***
