@@ -2,12 +2,16 @@
 
 
 ## Table of contents
-1. [About project](#about)
-2. [Presentation](#presentation)
-3. [Functionalities description](#functionalities-description)
-4. [Requirements](#requirements)
-5. [Build with](#programming-languages)
-6. [Team members & contributions](#team-members)
+
+<details>
+    <summary>Click to expand/collapse</summary>
+    1. [About project](#about)
+    2. [Presentation](#presentation)
+    3. [Functionalities description](#functionalities-description)
+    4. [Requirements](#requirements)
+    5. [Build with](#programming-languages)
+    6. [Team members & contributions](#team-members)
+</details>
 
 
 
@@ -20,6 +24,8 @@
 Welcome to <ins>**IoT Fridge Guardian**</ins>, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
+
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 
 
@@ -34,12 +40,16 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 3. <ins>**Visual expiry indication**</ins>  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+
 
 
 # Presentation
 
 - Youtube: [video](...link)
 - Presentation: [slides](...link)
+
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 
 
@@ -58,11 +68,15 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - [X] Internet connectivity library or API.
 - [X] Online database service.
 
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+
 
 
 # Programming language
 
 ***`C`***
+
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 
 
@@ -73,8 +87,9 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - **Julia Bernon**
 - **Lorenzo Negut**
 
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+
 ---
 
 TODO:
-- link "return at table of contents" at the end of each paragraph
 - specify contributions
