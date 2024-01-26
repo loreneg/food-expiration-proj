@@ -7,10 +7,10 @@
 <summary>Click to expand/collapse</summary>
 
 1. [About project](#about)
-2. [Presentation](#presentation)
-3. [Functionalities description](#functionalities-description)
+2. [Functionalities description](#functionalities-description)
+3. [Presentation](#presentation)
 4. [Requirements](#requirements)
-5. [Build with](#programming-language)
+5. [Programming language](#programming-language)
 6. [Team members & contributions](#team-members)
 
 </details>
@@ -20,13 +20,13 @@
 
 # About
 
-<div align="center">
-  <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
-</div>
-
 Welcome to <ins>**IoT Fridge Guardian**</ins>, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
+
+<div align="center">
+  <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
+</div>
 
 <div align="right">
     
