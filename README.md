@@ -75,6 +75,6 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 ---
 
-README todo:
+TODO:
 - link "return at table of contents" at the end of each paragraph
 - specify contributions
