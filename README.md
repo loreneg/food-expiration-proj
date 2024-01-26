@@ -1,4 +1,4 @@
-# IoT Fridge Guardian with MSP432-P401R
+# `IoT Fridge Guardian with MSP432-P401R`
 
 
 ## Table of contents
@@ -10,9 +10,6 @@
 
 
 # About
-
-|`Embedded software for the Internet of Things project`|
-:-:
 
 <div align="center">
   <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
