@@ -12,7 +12,7 @@
 
 short description
 
-![ ](..\Images\fridgeLogo)
+<img src="Images/fridgeLogo.png" alt="Logo" width="140" height="80">
 
 
 ## Functionalities description
