@@ -12,7 +12,7 @@
 
 short description
 
-![Fridge logo image](\Images\fridgeLogo)
+![ ](\Images\fridgeLogo)
 
 
 ## Functionalities description
