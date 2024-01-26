@@ -1,8 +1,8 @@
-# Food expire date notification
+# Smart Fridge Monitoring with MSP432-P401R
 
 ## Table of contents
 1. [About project](#about)
-2. [Video & presentiation](#presentation)
+2. [Presentation](#presentation)
 3. [Functionalities description](#functionalities-description)
 4. [Build with](#programming-languages)
 5. [Requirements](#requirements)
@@ -24,7 +24,8 @@ description
 
 ## Presentation
 
-video and ppt presentation
+- Youtube: [video](...link)
+- Presentation: [slides](...link)
 
 
 ## Programming language(s)
