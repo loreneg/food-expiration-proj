@@ -4,8 +4,8 @@
 1. [About project](#about)
 2. [Presentation](#presentation)
 3. [Functionalities description](#functionalities-description)
-4. [Build with](#programming-languages)
-5. [Requirements](#requirements)
+4. [Requirements](#requirements)
+5. [Build with](#programming-languages)
 
 
 ## About
@@ -28,11 +28,6 @@ description
 - Presentation: [slides](...link)
 
 
-## Programming language(s)
-
-C, ...
-
-
 ## Requirements
 
 ### Hardare
@@ -43,6 +38,10 @@ C, ...
 
 ...
 
+
+## Programming language(s)
+
+C, ...
 
 
 ---
