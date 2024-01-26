@@ -4,13 +4,15 @@
 ### Table of contents
 
 <details>
-    <summary>Click to expand/collapse</summary>
-    1. [About project](#about)
-    2. [Presentation](#presentation)
-    3. [Functionalities description](#functionalities-description)
-    4. [Requirements](#requirements)
-    5. [Build with](#programming-languages)
-    6. [Team members & contributions](#team-members)
+<summary>Click to expand/collapse</summary>
+
+1. [About project](#about)
+2. [Presentation](#presentation)
+3. [Functionalities description](#functionalities-description)
+4. [Requirements](#requirements)
+5. [Build with](#programming-languages)
+6. [Team members & contributions](#team-members)
+
 </details>
 <p>&nbsp;</p>
 
@@ -47,7 +49,9 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
-    [Return to Top](#table-of-contents)
+    
+[Return to Top](#table-of-contents)
+
 </div>
 <p>&nbsp;</p>
 
@@ -59,7 +63,9 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - Presentation: [slides](...link)
 
 <div align="right">
-    [Return to Top](#table-of-contents)
+    
+[Return to Top](#table-of-contents)
+
 </div>
 <p>&nbsp;</p>
 
@@ -81,7 +87,9 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - [X] Online database service.
 
 <div align="right">
-    [Return to Top](#table-of-contents)
+    
+[Return to Top](#table-of-contents)
+
 </div>
 <p>&nbsp;</p>
 
@@ -92,7 +100,9 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 ***`C`***
 
 <div align="right">
-    [Return to Top](#table-of-contents)
+    
+[Return to Top](#table-of-contents)
+
 </div>
 <p>&nbsp;</p>
 
@@ -106,7 +116,9 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 - **Lorenzo Negut**
 
 <div align="right">
-    [Return to Top](#table-of-contents)
+    
+[Return to Top](#table-of-contents)
+
 </div>
 
 
