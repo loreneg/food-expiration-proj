@@ -120,10 +120,3 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 [Return to Top](#table-of-contents)
 
 </div>
-
-
-
----
-
-TODO:
-- specify code contributions for each team member
