@@ -13,7 +13,7 @@
 short description
 
 <div align="center">
-  <a> <img src="/Images/fridgeLogo.jpg"> </a>
+  <a> <img src="/Images/fridgeLogo.jpg" width="240" height="300"> </a>
 </div>
 
 
