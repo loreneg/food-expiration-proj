@@ -12,7 +12,9 @@
 
 short description
 
-<img src="/Images/fridgeLogo.jpg" width="140" height="80">
+<div align="center">
+  <a> <img src="/Images/fridgeLogo.jpg" width="140" height="80"> </a>
+</div>
 
 
 ## Functionalities description
