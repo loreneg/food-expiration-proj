@@ -12,7 +12,7 @@
 ## About
 
 <div align="center">
-  <a> <img src="/Images/fridgeLogo.jpg" width="350" height="350"> </a>
+  <a> <img src="/Images/fridgeLogo.jpg" width="300" height="300"> </a>
 </div>
 
 Welcome to ***IoT Fridge Guardian***, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
