@@ -27,7 +27,9 @@ This project aims to enhance your food storage experience by providing real-time
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
 <div markdown="1" align="right">
+    
     [Return to Top](#table-of-contents)
+
 </div>
 <p>&nbsp;</p>
 
