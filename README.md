@@ -60,7 +60,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 #### :movie_camera: Video:  
 [![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
-<br><br><br>
+<br><br>
 
 #### :paperclip: Presentation:  
 [slides](...link)
@@ -82,7 +82,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
-<br><br><br>
+<br><br>
 
 ### **Software**
 
