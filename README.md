@@ -1,4 +1,4 @@
-# **IoT Fridge Guardian with MSP432-P401R**
+# IoT Fridge Guardian with MSP432-P401R
 
 <details>
 <summary><ins><b>Table of contents</b></ins></summary>
@@ -57,7 +57,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 # Demonstration
 
 #### :movie_camera: Video:  
-[![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+[![](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
 <br>
 
 #### :paperclip: Presentation:  
