@@ -1,10 +1,7 @@
 # IoT Fridge Guardian with MSP432-P401R
 
-
-### Table of contents
-
 <details>
-<summary>Click to expand/collapse</summary>
+<summary><b>Table of contents</b></summary>
 
 1. [About project](#about)
 2. [Functionalities description](#functionalities-description)
@@ -14,7 +11,7 @@
 6. [Team members & contributions](#team-members)
 
 </details>
-
+<br><br>
 
 
 # About
