@@ -99,7 +99,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 # Programming language
 
-**`C`**
+<a><img src="/Images/C-logo.jpg" width="50" height="50"></a>
 
 <div align="right">
     
