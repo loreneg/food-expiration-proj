@@ -70,16 +70,16 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Requirements
 
-#### Hardware
+#### - Hardware
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
-<br>
+<br><br>
 
-#### Software
+#### - Software
 
   :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
   :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
