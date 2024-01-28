@@ -8,13 +8,12 @@
 
 1. [About project](#about)
 2. [Functionalities description](#functionalities-description)
-3. [Presentation](#presentation)
+3. [Demonstration](#demonstration)
 4. [Requirements](#requirements)
 5. [Programming language](#programming-language)
 6. [Team members & contributions](#team-members)
 
 </details>
-<p>&nbsp;</p>
 
 
 
@@ -33,19 +32,18 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 [Return to Top](#table-of-contents)
 
 </div>
-<p>&nbsp;</p>
 
 
 
 # Functionalities description
 
-1. <ins>**Intuitive food management menu**</ins>  
+:meat_on_bone:  <ins>**Intuitive food management menu**</ins>  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 
-2. <ins>**Timely expiry alerts**</ins>  
+:clock6::heavy_exclamation_mark: <ins>**Timely expiry alerts**</ins>  
 Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 
-3. <ins>**Visual expiry indication**</ins>  
+:red_circle:  <ins>**Visual expiry indication**</ins>  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
@@ -53,67 +51,66 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 [Return to Top](#table-of-contents)
 
 </div>
-<p>&nbsp;</p>
 
 
 
-# Presentation
+# Demonstration
 
-- Youtube: [video](...link)
-- Presentation: [slides](...link)
+- Video :movie_camera::  
+[![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+
+- Presentation :paperclip::  
+[slides](...link)
 
 <div align="right">
     
 [Return to Top](#table-of-contents)
 
 </div>
-<p>&nbsp;</p>
 
 
 
 # Requirements
 
-### *Hardware*
-- [X] MSP432-P401R microcontroller.
-- [X] Booster board with a screen, analog inputs, and buttons.
-- [X] Red LED for visual indicators.
-- [X] Real-time clock (RTC) module for time-based alerts.
-- [X] Wireless Network Internet Controller (WNIC) module.
+### <ins>Hardware</ins>
+:heavy_check_mark: MSP432-P401R microcontroller.  
+:heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
+:heavy_check_mark: Red LED for visual indicators.  
+:heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
+:heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
 
-### *Software*
-- [X] MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).
-- [X] Real-time clock (RTC) library for time tracking.
-- [X] Internet connectivity library or API.
-- [X] Online database service.
+### <ins>Software</ins>
+:heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
+:heavy_check_mark: Real-time clock (RTC) library for time tracking.  
+:heavy_check_mark: Internet connectivity library or API.  
+:heavy_check_mark: Online database service.  
 
 <div align="right">
     
 [Return to Top](#table-of-contents)
 
 </div>
-<p>&nbsp;</p>
 
 
 
 # Programming language
 
-***`C`***
+**`C`**
 
 <div align="right">
     
 [Return to Top](#table-of-contents)
 
 </div>
-<p>&nbsp;</p>
 
 
 
 # Team members
 
-- **Gabriele Benetti**
-- **Giovanni Benetti**
-- **Julia Bernon**
-- **Lorenzo Negut**
+:arrow_forward: Gabriele Benetti
+:arrow_forward: Giovanni Benetti
+:arrow_forward: Julia Bernon
+:arrow_forward: Lorenzo Negut
 
 <div align="right">
     
