@@ -8,7 +8,7 @@
 3. [Demonstration](#demonstration)
 4. [Requirements](#requirements)
 5. [Programming language](#programming-language)
-6. [Team members](#team-members)
+6. [Team members](#team-members--contributions)
 
 </details>
 <br>
