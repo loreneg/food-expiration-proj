@@ -3,12 +3,12 @@
 <details>
 <summary><b>Table of contents</b></summary>
 
-1. [About project](#about)
+1. [About](#about)
 2. [Functionalities](#functionalities-description)
 3. [Demonstration](#demonstration)
 4. [Requirements](#requirements)
 5. [Programming language](#programming-language)
-6. [Team members](#team-members--contributions)
+6. [Team members & contributions](#team-members--contributions)
 
 </details>
 <br>
@@ -33,7 +33,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 
 
-# Functionalities description
+# Functionalities
 
 :meat_on_bone: **`Intuitive food management menu`**  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
