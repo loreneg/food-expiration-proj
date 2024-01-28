@@ -11,7 +11,7 @@
 6. [Team members & contributions](#team-members)
 
 </details>
-<br><br>
+<br>
 
 
 # About
