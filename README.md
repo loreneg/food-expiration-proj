@@ -4,11 +4,11 @@
 <summary><b>Table of contents</b></summary>
 
 1. [About project](#about)
-2. [Functionalities description](#functionalities-description)
+2. [Functionalities](#functionalities-description)
 3. [Demonstration](#demonstration)
 4. [Requirements](#requirements)
 5. [Programming language](#programming-language)
-6. [Team members & contributions](#team-members)
+6. [Team members](#team-members)
 
 </details>
 <br>
@@ -27,7 +27,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -35,20 +35,20 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Functionalities description
 
-:meat_on_bone: **Intuitive food management menu**  
+:meat_on_bone: **`Intuitive food management menu`**  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 <br><br>
 
-:clock6: **Timely expiry alerts**  
+:clock6: **`Timely expiry alerts`**  
 Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 <br><br>
 
-:red_circle: **Visual expiry indication**  
+:red_circle: **`Visual expiry indication`**  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -58,14 +58,14 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 #### :movie_camera: Video:  
 [![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
-<br><br>
+<br>
 
 #### :paperclip: Presentation:  
 [slides](...link)
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -91,7 +91,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -103,13 +103,13 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
 
 
 
-# Team members
+# Team members & contributions
 
 - Gabriele Benetti  
 - Giovanni Benetti  
@@ -118,6 +118,6 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#table-of-contents)
+[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
 </div>
