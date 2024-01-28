@@ -10,7 +10,7 @@
 5. [Programming language](#programming-language)
 6. [Team members & contributions](#team-members)
 
-</details><br><br>
+</details><br>
 
 
 
