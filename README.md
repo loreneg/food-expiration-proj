@@ -35,13 +35,13 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 # Functionalities description
 
 #### :meat_on_bone: <ins>Intuitive food management menu</ins>
-Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
+  Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 
 #### :clock6: <ins>Timely expiry alerts</ins>
-Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
+  Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 
 #### :red_circle: <ins>Visual expiry indication</ins>
-View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
+  View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
     
@@ -54,7 +54,8 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 # Demonstration
 
 #### :movie_camera: Video:  
-[![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")  
+[![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+<br>
 
 #### :paperclip: Presentation:  
 [slides](...link)
@@ -69,15 +70,16 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 # Requirements
 
-- **Hardware**
+#### Hardware
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
+<br>
 
-- **Software**
+#### Software
 
   :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
   :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
@@ -106,10 +108,10 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 # Team members
 
-:arrow_right: Gabriele Benetti  
-:arrow_right: Giovanni Benetti  
-:arrow_right: Julia Bernon  
-:arrow_right: Lorenzo Negut  
+- Gabriele Benetti  
+- Giovanni Benetti  
+- Julia Bernon  
+- Lorenzo Negut  
 
 <div align="right">
     
