@@ -1,7 +1,7 @@
 # IoT Fridge Guardian with MSP432-P401R
 
 <details>
-<summary><b>Table of contents</b></summary>
+<summary><ins><b>Table of contents</b></ins></summary>
 
 1. [About project](#about)
 2. [Functionalities description](#functionalities-description)
@@ -34,14 +34,19 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Functionalities description
 
-:meat_on_bone: <ins>**Intuitive food management menu**</ins>  
-  Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
+:meat_on_bone: <ins>**Intuitive food management menu**</ins>
 
-:clock6: <ins>**Timely expiry alerts**</ins>  
-  Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
+Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
+<br><br>
 
-:red_circle: <ins>**Visual expiry indication**</ins>  
-  View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
+:clock6: <ins>**Timely expiry alerts**</ins>
+
+Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
+<br><br>
+
+:red_circle: <ins>**Visual expiry indication**</ins>
+
+View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
     
@@ -55,7 +60,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 #### :movie_camera: Video:  
 [![video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
-<br>
+<br><br><br>
 
 #### :paperclip: Presentation:  
 [slides](...link)
@@ -70,16 +75,16 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Requirements
 
-#### - Hardware
+### **Hardware**
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
-<br><br>
+<br><br><br>
 
-#### - Software
+### **Software**
 
   :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
   :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
