@@ -74,18 +74,18 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 - **Hardware**
 
-:heavy_check_mark: MSP432-P401R microcontroller.  
-:heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
-:heavy_check_mark: Red LED for visual indicators.  
-:heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
-:heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
+  :heavy_check_mark: MSP432-P401R microcontroller.  
+  :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
+  :heavy_check_mark: Red LED for visual indicators.  
+  :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
+  :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
 
 - **Software**
 
-:heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
-:heavy_check_mark: Real-time clock (RTC) library for time tracking.  
-:heavy_check_mark: Internet connectivity library or API.  
-:heavy_check_mark: Online database service.  
+  :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
+  :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
+  :heavy_check_mark: Internet connectivity library or API.  
+  :heavy_check_mark: Online database service.  
 
 <div align="right">
     
