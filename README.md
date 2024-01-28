@@ -37,13 +37,13 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Functionalities description
 
-#### :meat_on_bone: <ins>**Intuitive food management menu**</ins>  
+### :meat_on_bone: Intuitive food management menu
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 
-#### :clock6::heavy_exclamation_mark: <ins>**Timely expiry alerts**</ins>  
+### :clock6: Timely expiry alerts
 Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 
-#### :red_circle: <ins>**Visual expiry indication**</ins>  
+### :red_circle: Visual expiry indication
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
@@ -72,14 +72,14 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 # Requirements
 
-### Hardware
+- Hardware
 :heavy_check_mark: MSP432-P401R microcontroller.  
 :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
 :heavy_check_mark: Red LED for visual indicators.  
 :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
 :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
 
-### Software
+- Software
 :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
 :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
 :heavy_check_mark: Internet connectivity library or API.  
