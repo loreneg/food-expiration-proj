@@ -1,7 +1,7 @@
 # IoT Fridge Guardian with MSP432-P401R
 
 <details>
-<summary><ins><b>Table of contents</b></ins></summary>
+<summary><b>Table of contents</b></summary>
 
 1. [About project](#about)
 2. [Functionalities description](#functionalities-description)
@@ -35,15 +35,15 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Functionalities description
 
-:meat_on_bone: <ins>**Intuitive food management menu**</ins>  
+:meat_on_bone: **Intuitive food management menu**  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 <br><br>
 
-:clock6: <ins>**Timely expiry alerts**</ins>  
+:clock6: **Timely expiry alerts**  
 Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 <br><br>
 
-:red_circle: <ins>**Visual expiry indication**</ins>  
+:red_circle: **Visual expiry indication**  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
@@ -80,7 +80,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
-<br><br>
+<br>
 
 ### **Software**
 
