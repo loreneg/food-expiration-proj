@@ -1,4 +1,4 @@
-# `IoT Fridge Guardian with MSP432-P401R`
+# IoT Fridge Guardian with MSP432-P401R
 
 
 ### Table of contents
@@ -19,7 +19,7 @@
 
 # About
 
-Welcome to <ins>**IoT Fridge Guardian**</ins>, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
+Welcome to **`IoT Fridge Guardian`**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
 This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
