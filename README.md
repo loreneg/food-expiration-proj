@@ -35,18 +35,15 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 # Functionalities description
 
-:meat_on_bone: <ins>**Intuitive food management menu**</ins>
-
+:meat_on_bone: <ins>**Intuitive food management menu**</ins>  
 Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
 <br><br>
 
-:clock6: <ins>**Timely expiry alerts**</ins>
-
+:clock6: <ins>**Timely expiry alerts**</ins>  
 Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
 <br><br>
 
-:red_circle: <ins>**Visual expiry indication**</ins>
-
+:red_circle: <ins>**Visual expiry indication**</ins>  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 
 <div align="right">
