@@ -6,25 +6,61 @@ using namespace std;
 
 // Constants
 const string FOOD_FILE_NAME = "food_data.txt";
-const int NUM_FOOD_ITEMS = 8;
+const int NUM_FOOD_ITEMS = 100;
 
 const int MIN_YEAR_EXP = 2023;
 const int MAX_YEAR_EXP = 2025;
-const float MIN_TEMPERATURE = -20.0;
-const float MAX_TEMPERATURE = +20.0;
-const int MIN_HUMIDITY = 25.0;
-const int MAX_HUMIDITY = 85.0;
 
-// Return a random date string "YYYY-MM-DD"
+// Return a random date string "DD-MMM-YY", with month as literal
 string getRandomDate(int minYear, int maxYear)
 {
+    string month_string;
     int year = rand() % (maxYear - minYear + 1) + minYear; // [minYear, maxYear]
     int month = rand() % 12 + 1;                           // [1, 12]
     int day = rand() % 28 + 1;                             // [1, 28]
-
-    return (year < 1000 ? "0" : "") + to_string(year) + '-' +
-           (month < 10 ? "0" : "") + to_string(month) + '-' +
-           (day < 10 ? "0" : "") + to_string(day);
+    
+    switch(month) {
+        case 1:
+            month_string = "Jan";
+            break;
+        case 2:
+            month_string = "Feb";
+            break;
+        case 3:
+            month_string = "Mar";
+            break;
+        case 4:
+            month_string = "Apr";
+            break;
+        case 5:
+            month_string = "May";
+            break;
+        case 6:
+            month_string = "Jun";
+            break;
+        case 7:
+            month_string = "Jul";
+            break;
+        case 8:
+            month_string = "Aug";
+            break;
+        case 9:
+            month_string = "Sep";
+            break;
+        case 10:
+            month_string = "Oct";
+            break;
+        case 11:
+            month_string = "Nov";
+            break;
+        case 12:
+            month_string = "Dec";
+            break;
+    }
+    
+    return (day < 10 ? "0" : "") + to_string(day) + '-' + 
+           month_string + '-' + 
+           (year < 1000 ? "0" : "") + to_string(year);
 }
 
 // Return a random float within a range
