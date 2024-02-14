@@ -56,9 +56,9 @@ main.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 main.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
 main.obj: ../Drivers/init.h
 main.obj: ../Logic/logic.h
-main.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h
-main.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h
-main.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h
+main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
+main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
+main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
 
 ../main.c:
 
@@ -172,9 +172,9 @@ C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h:
 
 ../Logic/logic.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
 

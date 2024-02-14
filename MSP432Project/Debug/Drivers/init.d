@@ -1,8 +1,8 @@
 # FIXED
 
 Drivers/init.obj: ../Drivers/init.c
-Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/init.h
-Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/graphicsContext.h
+Drivers/init.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/init.h
+Drivers/init.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h
 Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h
 Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_ti_config.h
@@ -16,7 +16,7 @@ Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include
 Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
 Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
 Drivers/init.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h
-Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/Lcd/Crystalfontz128x128_ST7735.h
+Drivers/init.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/Lcd/Crystalfontz128x128_ST7735.h
 Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/driverlib.h
 Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/adc14.h
 Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/inc/msp.h
@@ -59,9 +59,9 @@ Drivers/init.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_4
 
 ../Drivers/init.c:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/init.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/init.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/graphicsContext.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h:
 
@@ -89,7 +89,7 @@ C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/Lcd/Crystalfontz128x128_ST7735.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/Lcd/Crystalfontz128x128_ST7735.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/driverlib.h:
 

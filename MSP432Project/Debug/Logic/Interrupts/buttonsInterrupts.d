@@ -53,12 +53,12 @@ Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/simpl
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/flash.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h
-Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/graphicsContext.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
-Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/logic.h
-Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h
-Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h
-Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
 
@@ -168,17 +168,17 @@ C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/graphicsContext.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/logic.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h:
 

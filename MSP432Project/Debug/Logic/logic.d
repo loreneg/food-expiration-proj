@@ -12,9 +12,9 @@ Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_types.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
-Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h
-Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h
-Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h
+Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
+Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
+Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/driverlib.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/adc14.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
@@ -56,7 +56,7 @@ Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/flash.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h
-Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/init.h
+Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/init.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
 
@@ -84,11 +84,11 @@ C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/menuGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/foodListGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Logic/Graphics/addFoodGraphics.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/driverlib.h:
 
@@ -172,7 +172,7 @@ C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h:
 
-C:/Users/MACHCREATOR/workspace_v12/MSP432ProjectFrisge/Drivers/init.h:
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/init.h:
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h:
 
