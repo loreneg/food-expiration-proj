@@ -42,7 +42,7 @@ void PORT3_IRQHandler(void)
         if(menuUnlocked && !notOnMenuScreen){   //if on menu
             switch(currSelection){
             case FOODLIST:
-                selected = 0;
+                flselected = 0;
                 initSelection();
                 break;
             case ADDFOOD:

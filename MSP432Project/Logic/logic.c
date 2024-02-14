@@ -11,7 +11,51 @@
 Selection_t currSelection = FOODLIST;
 
 FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT];
-uint8_t selected = 0;
+uint8_t flselected = 0; //selected variable for the foodlist section
+uint8_t afselected = 0; //selected variable for the add food section
+
+//This function allows us to print the month's name instead of the number
+
+void convertMonthToString(uint8_t month, char *month_string)
+{
+    switch (month)
+    {
+    case 0x01:
+        sprintf(month_string, "Jan");
+        break;
+    case 0x02:
+        sprintf(month_string, "Feb");
+        break;
+    case 0x03:
+        sprintf(month_string, "Mar");
+        break;
+    case 0x04:
+        sprintf(month_string, "Apr");
+        break;
+    case 0x05:
+        sprintf(month_string, "May");
+        break;
+    case 0x06:
+        sprintf(month_string, "Jun");
+        break;
+    case 0x07:
+        sprintf(month_string, "Jul");
+        break;
+    case 0x08:
+        sprintf(month_string, "Aug");
+        break;
+    case 0x09:
+        sprintf(month_string, "Sep");
+        break;
+    case 0x11:
+        sprintf(month_string, "Nov");
+        break;
+    case 0x12:
+    default:
+        sprintf(month_string, "Dec");
+        break;
+    }
+}
 
 
 void _hwInit()
@@ -98,12 +142,16 @@ void drawSelection(uint64_t y){
 }
 
 void drawSelectionList(uint64_t y){
-    if(y>9800 && selected > 0){
-        selected = (uint8_t)(--selected % MAX_FOOD_ITEMS_COUNT);
+    if(y>9800 && flselected > 0){
+        flselected = (uint8_t)(--flselected % MAX_FOOD_ITEMS_COUNT);
     } else if(y<7000){
-        selected = (uint8_t)(++selected % MAX_FOOD_ITEMS_COUNT);      // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+        flselected = (uint8_t)(++flselected % MAX_FOOD_ITEMS_COUNT);      // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
     }
 
-    enableSelection(selected);
+    enableSelection(flselected);
+}
+
+void drawSelectionData(uint64_t y, uint64_t x){
+
 }
 
