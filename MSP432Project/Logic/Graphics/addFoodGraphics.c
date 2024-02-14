@@ -12,6 +12,8 @@
 
 //temporary string for printing
 char c[4];
+//old selection, just for graphics cleanup
+uint8_t oldSelection = 0;
 
 FoodItem_t newEntry;    //item that will be added to the list
 
@@ -101,4 +103,10 @@ void showAddFood()
     for (i = 0; i < 9; i++)
         printDataButton(i, false);
     printDataButton(7, true);
+}
+
+void enableAddFoodSelection(uint8_t i){
+    printDataButton(i, true);
+    printDataButton(oldSelection, false);
+    oldSelection = i;
 }

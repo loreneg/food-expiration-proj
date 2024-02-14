@@ -57,7 +57,6 @@ void convertMonthToString(uint8_t month, char *month_string)
     }
 }
 
-
 void _hwInit()
 {
     //Initializes all unused ports in order to address power consumption, this function is not mandatory and should just remove the warning (see the implementation for further info on why the warning is still present):
@@ -88,10 +87,10 @@ void _hwInit()
     //initialize LCD
     _graphicsInit();
 
-
     //variable init. Just for testing
     int i;
-    for(i = 0; i < MAX_FOOD_ITEMS_COUNT; i++){
+    for (i = 0; i < MAX_FOOD_ITEMS_COUNT; i++)
+    {
         sprintf(foodList[i].name, "%d", i);
         foodList[i].quantity = 6;
         RTC_C_Calendar date = RTC_C_getCalendarTime();
@@ -124,34 +123,53 @@ void activate_peripherals()
     ADC14_toggleConversionTrigger();
 }
 
-
-void drawSelection(uint64_t y){
-    if(y>9800){
-        currSelection = (Selection_t) ((--currSelection) % 2);  // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
-    } else if(y<7000){
-        currSelection = (Selection_t) (++currSelection % 2);        // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+void drawSelection(uint64_t y)
+{
+    if (y > 9800)
+    {
+        currSelection = (Selection_t) ((--currSelection) % 2); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+    }
+    else if (y < 7000)
+    {
+        currSelection = (Selection_t) (++currSelection % 2); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
     }
 
-    if(currSelection == FOODLIST){
+    if (currSelection == FOODLIST)
+    {
         drawSelectionFoodList();
     }
 
-    if(currSelection == ADDFOOD){
+    if (currSelection == ADDFOOD)
+    {
         drawSelectionAddFood();
     }
 }
 
-void drawSelectionList(uint64_t y){
-    if(y>9800 && flselected > 0){
-        flselected = (uint8_t)(--flselected % MAX_FOOD_ITEMS_COUNT);
-    } else if(y<7000){
-        flselected = (uint8_t)(++flselected % MAX_FOOD_ITEMS_COUNT);      // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+void drawSelectionList(uint64_t y)
+{
+    if (y > 9800 && flselected > 0)
+    {
+        flselected = (uint8_t) (--flselected % MAX_FOOD_ITEMS_COUNT);
+    }
+    else if (y < 7000)
+    {
+        flselected = (uint8_t) (++flselected % MAX_FOOD_ITEMS_COUNT); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
     }
 
     enableSelection(flselected);
 }
 
-void drawSelectionData(uint64_t y, uint64_t x){
+void drawSelectionData(uint64_t y, uint64_t x)
+{
+    if (y > 9800 && afselected > 0)
+    {
+        afselected = (uint8_t) (--afselected % ADDFOODBUTTONS);
+    }
+    else if (y < 7000)
+    {
+        afselected = (uint8_t) (++afselected % ADDFOODBUTTONS); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+    }
 
+    enableAddFoodSelection(afselected);
 }
 

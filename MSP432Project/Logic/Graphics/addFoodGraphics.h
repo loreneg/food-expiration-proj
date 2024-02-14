@@ -1,6 +1,7 @@
 #ifndef __ADDFOODGRAPHICS_H__
 #define __ADDFOODGRAPHICS_H__
 
+#include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include "Logic/Graphics/foodListGraphics.h"
 
 #define PRODNAMELENGTH 5
@@ -26,5 +27,7 @@
 #define MONTHSEPARATOR 44
 
 void showAddFood();
+void enableAddFoodSelection(uint8_t i);
+void printDataButton(uint8_t i, bool selected);
 
 #endif

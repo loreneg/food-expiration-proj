@@ -8,6 +8,7 @@
 
 #define MAX_FOOD_NAME_LENGTH 6  //5 + string terminator
 #define MAX_FOOD_ITEMS_COUNT 50
+#define ADDFOODBUTTONS 9        //number of buttons in addfood
 
 extern Selection_t currSelection;
 
