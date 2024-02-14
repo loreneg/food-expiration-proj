@@ -1,10 +1,3 @@
-/*
- * main.c
- *
- *  Created on: 28 nov 2022
- *      Author: damiano
- */
-
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include <ti/devices/msp432p4xx/inc/msp.h>
 #include <ti/grlib/grlib.h>
