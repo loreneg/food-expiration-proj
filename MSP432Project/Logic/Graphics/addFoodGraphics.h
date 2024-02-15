@@ -37,5 +37,6 @@
 void showAddFood(int8_t i);
 void enableAddFoodSelection(uint8_t i);
 void changeSelected(uint8_t i, int8_t direction);
+void confirmChoise();
 
 #endif

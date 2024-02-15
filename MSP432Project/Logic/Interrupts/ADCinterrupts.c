@@ -1,14 +1,5 @@
 #include "interrupts.h"
 
-void customDelay(uint64_t CYCLES)
-{
-    uint64_t j;
-
-    //this could throw a warning: Detected SW delay loop using empty loop. Recommend using a timer module instead
-    //but the creator has decided not to use another timer to implement this function
-    for(j=0;j<CYCLES;j++){}
-}
-
 void ADC14_IRQHandler(void)
 {
     /* ADC results buffer that can store both the Joystick results and accelerometer ones */

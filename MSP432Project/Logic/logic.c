@@ -25,6 +25,15 @@ uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value)
     return 0;
 }
 
+void customDelay(uint64_t CYCLES)
+{
+    uint64_t j;
+
+    //this could throw a warning: Detected SW delay loop using empty loop. Recommend using a timer module instead
+    //but the creator has decided not to use another timer to implement this function
+    for(j=0;j<CYCLES;j++){}
+}
+
 //returns quantity in char
 
 uint8_t getQuantity(FoodItem_t f)
@@ -109,7 +118,7 @@ void _hwInit()
 
     //variable init. Just for testing
     int i;
-    for (i = 0; i < MAX_FOOD_ITEMS_COUNT; i++)
+    for (i = 0; i < length; i++)
     {
         int8_t j;
         for(j = 0; j < 5; j++)
@@ -171,11 +180,11 @@ void drawSelectionList(uint64_t y)
 {
     if (y > 9800 && flselected > 0)
     {
-        flselected = (uint8_t) (--flselected % MAX_FOOD_ITEMS_COUNT);
+        flselected = (uint8_t) (--flselected % length);
     }
     else if (y < 7000)
     {
-        flselected = (uint8_t) (++flselected % MAX_FOOD_ITEMS_COUNT); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+        flselected = (uint8_t) (++flselected % length); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
     }
 
     enableSelection(flselected);

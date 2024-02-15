@@ -17,6 +17,7 @@ char c[4];
 uint8_t oldSelection = 0;
 
 FoodItem_t newEntry;    //item that will be added to the list
+int8_t modified = -1;
 
 //STANDARD DEFINITION OF A BUTTON
 Graphics_Button dataButton = { 0, 0, 0, 0, 1, false, 0x001733,
@@ -86,8 +87,9 @@ void showAddFood(int8_t oldEntry)   //index of entry to modify
     else
     {
         //strcpy((char*)newEntry.name, (char*)foodList[oldEntry].name);
+        modified = oldEntry;
         int8_t j;
-        for(j = 0; j < MAX_FOOD_NAME_LENGTH-1; j++)
+        for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
             newEntry.name[j] = foodList[oldEntry].name[j];
         newEntry.day = foodList[oldEntry].day;
         newEntry.quantity = foodList[oldEntry].quantity;
@@ -224,4 +226,33 @@ void changeSelected(uint8_t i, int8_t direction) //this function handles the edi
         break;
     }
     printDataButton(i, true);
+}
+
+void confirmChoise()
+{
+    if (modified != -1) //if true modify old entry
+    {
+        int8_t j;
+        for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
+            foodList[modified].name[j] = newEntry.name[j];
+        foodList[modified].day = newEntry.day;
+        foodList[modified].quantity = newEntry.quantity;
+        foodList[modified].month = newEntry.month;
+        foodList[modified].year = newEntry.year;
+        currSelection = FOODLIST;
+        initSelection();
+    }
+    else
+    {
+        //add newEntry to array/list
+        Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+        Graphics_drawString(&g_sContext, "CIBO AGGIUNTO!", AUTO_STRING_LENGTH,
+        NAMEX,
+                            NAMEY,
+                            true);
+        customDelay(100000);
+        afselected = 0;
+        showAddFood(-1);
+    }
+
 }

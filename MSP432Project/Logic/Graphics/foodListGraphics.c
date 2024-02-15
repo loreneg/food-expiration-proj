@@ -35,11 +35,11 @@ void printButton(uint8_t i, uint8_t pos, bool selected)
     convertMonthToString(months[foodList[i].month], month);
     char name[MAX_FOOD_NAME_LENGTH];
     int8_t j;
-    for(j = 0; j < MAX_FOOD_NAME_LENGTH-1; j++)
+    for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
         name[j] = alphabet[foodList[i].name[j]];
-    name[MAX_FOOD_NAME_LENGTH-1] = '\0';
-    sprintf(n, "%-5s:Q%-2c, %02x-%-3s-%02x", name,
-            getQuantity(foodList[i]), days[foodList[i].day], month, years[foodList[i].year]);
+    name[MAX_FOOD_NAME_LENGTH - 1] = '\0';
+    sprintf(n, "%-5s:Q%-2c, %02x-%-3s-%02x", name, getQuantity(foodList[i]),
+            days[foodList[i].day], month, years[foodList[i].year]);
     ListButton.text = (int8_t*) n;
     Graphics_drawButton(&g_sContext, &ListButton);
 }
@@ -55,7 +55,7 @@ void showFoodList()
 
 void initSelection()
 {
-    CS_initClockSignal(CS_MCLK, CS_MODOSC_SELECT, CS_CLOCK_DIVIDER_4);  //small overclock for showing data faster 6MHz
+    CS_initClockSignal(CS_MCLK, CS_MODOSC_SELECT, CS_CLOCK_DIVIDER_4); //small overclock for showing data faster 6MHz
     oldSelected = 0;
     page = 0;
     showFoodList();

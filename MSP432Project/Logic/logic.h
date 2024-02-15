@@ -30,11 +30,13 @@ typedef struct FoodItem_t {
 }FoodItem_t;
 
 extern FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT];
+extern uint8_t length;
 extern uint8_t flselected;
 extern uint8_t afselected;
 
 uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value);
 uint8_t getQuantity(FoodItem_t f);
+void customDelay(uint64_t CYCLES);
 void convertMonthToString(uint8_t month, char *month_string);
 
 void _hwInit();
