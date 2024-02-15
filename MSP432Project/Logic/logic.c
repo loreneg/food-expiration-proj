@@ -11,6 +11,7 @@
 Selection_t currSelection = FOODLIST;
 
 FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT];
+uint8_t length = 0;     //used length of the foodList array
 uint8_t flselected = 0; //selected variable for the foodlist section
 uint8_t afselected = 0; //selected variable for the add food section
 
@@ -161,15 +162,28 @@ void drawSelectionList(uint64_t y)
 
 void drawSelectionData(uint64_t y, uint64_t x)
 {
-    if (y > 9800 && afselected > 0)
+
+    if (y > 9800)
     {
-        afselected = (uint8_t) (--afselected % ADDFOODBUTTONS);
+        changeSelected(afselected, 1);   //goes up
     }
     else if (y < 7000)
     {
-        afselected = (uint8_t) (++afselected % ADDFOODBUTTONS); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+        changeSelected(afselected, -1); //goes down
     }
+    else
+    {
 
-    enableAddFoodSelection(afselected);
+        if (x < 7200 && afselected > 0)
+        {
+            afselected = (uint8_t) (--afselected % ADDFOODBUTTONS); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+        }
+        else if (x > 8300)
+        {
+            afselected = (uint8_t) (++afselected % ADDFOODBUTTONS);
+        }
+
+        enableAddFoodSelection(afselected);
+    }
 }
 

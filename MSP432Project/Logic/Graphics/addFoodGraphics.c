@@ -3,6 +3,7 @@
 #include <ti/grlib/button.h>
 
 #include <stdio.h>
+#include <string.h>
 
 #include "Drivers/Lcd/Crystalfontz128x128_ST7735.h"
 
@@ -45,7 +46,7 @@ void printDataButton(uint8_t i, bool selected)
     case 2:
     case 3:
     case 4:
-        c[0] = newEntry.name[i];
+        c[0] = alphabet[newEntry.name[i]];
         c[1] = '\0';
         setButton(PRODNAMEX + i * 11, PRODNAMEY, (int8_t*) c, 0);
         break;
@@ -74,7 +75,7 @@ void printDataButton(uint8_t i, bool selected)
 void showAddFood()
 {
     RTC_C_Calendar date = RTC_C_getCalendarTime();  //current date
-    sprintf(newEntry.name, "abcde");
+    memset(&newEntry.name, 0, 5);
     newEntry.quantity = 1;
     newEntry.day = date.dayOfmonth;
     newEntry.month = date.month;
@@ -102,11 +103,47 @@ void showAddFood()
     uint8_t i;
     for (i = 0; i < 9; i++)
         printDataButton(i, false);
-    printDataButton(7, true);
+    oldSelection = 0;
+    printDataButton(0, true);
 }
 
-void enableAddFoodSelection(uint8_t i){
+void enableAddFoodSelection(uint8_t i)
+{
+    if (i != oldSelection)
+    {
+        printDataButton(i, true);
+        printDataButton(oldSelection, false);
+        oldSelection = i;
+    }
+}
+
+void changeSelected(uint8_t i, int8_t direction)
+{
+    switch (i)
+    {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        if ((direction == 1 && newEntry.name[i] < NAMESELECTIONLENGTH - 1)
+                || (direction == -1 && newEntry.name[i] > 0))
+            newEntry.name[i] += direction;
+        break;
+    case 5:
+        if ((direction == 1 && newEntry.quantity < 9)
+                || (direction == -1 && newEntry.quantity > 1))
+            newEntry.quantity += direction;
+        break;
+    case 6:
+        if ((direction == 1 && newEntry.quantity < 9)
+                        || (direction == -1 && newEntry.quantity > 1))
+                    newEntry.quantity += direction;
+        break;
+    case 7:
+        break;
+    case 8:
+        break;
+    }
     printDataButton(i, true);
-    printDataButton(oldSelection, false);
-    oldSelection = i;
 }

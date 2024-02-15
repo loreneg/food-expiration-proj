@@ -48,7 +48,7 @@ void ADC14_IRQHandler(void)
                     resultsBuffer[1] = ADC14_getResult(ADC_MEM1);
                     resultsBuffer[0] = ADC14_getResult(ADC_MEM0);
 
-                    if(resultsBuffer[1] < 7000 || resultsBuffer[1] > 9800){
+                    if(resultsBuffer[1] < 7000 || resultsBuffer[1] > 9800 || resultsBuffer[0] < 7200 || resultsBuffer[0] > 8300){
                         customDelay(10000);
                         //switch modality in menu
                         drawSelectionData((uint64_t) resultsBuffer[1], (uint64_t) resultsBuffer[0]);

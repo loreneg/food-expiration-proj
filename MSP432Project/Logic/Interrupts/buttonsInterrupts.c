@@ -46,6 +46,7 @@ void PORT3_IRQHandler(void)
                 initSelection();
                 break;
             case ADDFOOD:
+                afselected = 0;
                 showAddFood();
                 break;
             }

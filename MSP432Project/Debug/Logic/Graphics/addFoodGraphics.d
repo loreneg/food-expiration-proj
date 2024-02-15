@@ -55,6 +55,8 @@ Logic/Graphics/addFoodGraphics.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/button.h
 Logic/Graphics/addFoodGraphics.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 Logic/Graphics/addFoodGraphics.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
+Logic/Graphics/addFoodGraphics.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h
+Logic/Graphics/addFoodGraphics.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/Lcd/Crystalfontz128x128_ST7735.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
@@ -173,6 +175,10 @@ C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h:
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h:
+
+C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h:
+
+C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h:
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/Lcd/Crystalfontz128x128_ST7735.h:
 

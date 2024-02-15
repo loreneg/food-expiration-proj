@@ -26,8 +26,13 @@
 #define DAYSEPARATOR 16
 #define MONTHSEPARATOR 44
 
+#define NAMESELECTIONLENGTH 37
+#define QUANTITYSELECTIONLENGTH 9   //from 1 to 9
+
 void showAddFood();
 void enableAddFoodSelection(uint8_t i);
-void printDataButton(uint8_t i, bool selected);
+void changeSelected(uint8_t i, int8_t direction);
+
+static const int8_t* alphabet = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-"};
 
 #endif
