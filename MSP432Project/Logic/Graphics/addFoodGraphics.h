@@ -3,6 +3,7 @@
 
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include "Logic/Graphics/foodListGraphics.h"
+#include "Logic/logic.h"
 
 #define PRODNAMELENGTH 5
 #define NAMEY 21
@@ -28,11 +29,13 @@
 
 #define NAMESELECTIONLENGTH 37
 #define QUANTITYSELECTIONLENGTH 9   //from 1 to 9
+#define DAYSLENGTH 31
+#define MONTHSLENGTH 12
+#define YEARSLENGTH 6   //from 2024 to 2030, could be incremented
 
-void showAddFood();
+
+void showAddFood(int8_t i);
 void enableAddFoodSelection(uint8_t i);
 void changeSelected(uint8_t i, int8_t direction);
-
-static const int8_t* alphabet = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-"};
 
 #endif

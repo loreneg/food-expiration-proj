@@ -32,9 +32,14 @@ void printButton(uint8_t i, uint8_t pos, bool selected)
     ListButton.yMax = pos * HEIGHT + HEIGHT;
     ListButton.textXPos = 0;
     ListButton.textYPos = pos * HEIGHT + (HEIGHT - 6) / 2;
-    convertMonthToString(foodList[i].month, month);
-    sprintf(n, "%-4s: Q%-2d, %02x-%-3s-%02x", foodList[i].name,
-            foodList[i].quantity, foodList[i].day, month, foodList[i].year);
+    convertMonthToString(months[foodList[i].month], month);
+    char name[MAX_FOOD_NAME_LENGTH];
+    int8_t j;
+    for(j = 0; j < MAX_FOOD_NAME_LENGTH-1; j++)
+        name[j] = alphabet[foodList[i].name[j]];
+    name[MAX_FOOD_NAME_LENGTH-1] = '\0';
+    sprintf(n, "%-5s:Q%-2c, %02x-%-3s-%02x", name,
+            getQuantity(foodList[i]), days[foodList[i].day], month, years[foodList[i].year]);
     ListButton.text = (int8_t*) n;
     Graphics_drawButton(&g_sContext, &ListButton);
 }

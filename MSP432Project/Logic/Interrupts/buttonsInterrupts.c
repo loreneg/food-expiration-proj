@@ -47,7 +47,7 @@ void PORT3_IRQHandler(void)
                 break;
             case ADDFOOD:
                 afselected = 0;
-                showAddFood();
+                showAddFood(-1);    //-1 means that I want to add a new Entry to the list
                 break;
             }
 

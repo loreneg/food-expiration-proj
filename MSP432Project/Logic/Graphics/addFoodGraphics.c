@@ -51,20 +51,20 @@ void printDataButton(uint8_t i, bool selected)
         setButton(PRODNAMEX + i * 11, PRODNAMEY, (int8_t*) c, 0);
         break;
     case 5:
-        c[0] = newEntry.quantity + 48;  //conversion from int to ascii number
+        c[0] = getQuantity(newEntry); //conversion from int to ascii number
         c[1] = '\0';
         setButton(QUANTITYBUTTONX, QUANTITYBUTTONY, (int8_t*) c, 0);
         break;
     case 6:
-        sprintf(c, "%02x", newEntry.day);
+        sprintf(c, "%02x", days[newEntry.day]);
         setButton(DAYBUTTONX, DATEBUTTONY, (int8_t*) c, 1);
         break;
     case 7:
-        convertMonthToString(foodList[i].month, c);
+        convertMonthToString(months[newEntry.month], c);
         setButton(MONTHBUTTONX, DATEBUTTONY, (int8_t*) c, 2);
         break;
     case 8:
-        sprintf(c, "%02x", newEntry.year);
+        sprintf(c, "%02x", years[newEntry.year]);
         setButton(YEARBUTTONX, DATEBUTTONY, (int8_t*) c, 1);
         break;
     }
@@ -72,32 +72,50 @@ void printDataButton(uint8_t i, bool selected)
     Graphics_drawButton(&g_sContext, &dataButton);
 }
 
-void showAddFood()
+void showAddFood(int8_t oldEntry)   //index of entry to modify
 {
-    RTC_C_Calendar date = RTC_C_getCalendarTime();  //current date
-    memset(&newEntry.name, 0, 5);
-    newEntry.quantity = 1;
-    newEntry.day = date.dayOfmonth;
-    newEntry.month = date.month;
-    newEntry.year = date.year;
+    if (oldEntry == -1)
+    {
+        RTC_C_Calendar date = RTC_C_getCalendarTime();  //current date
+        memset(&newEntry.name, 0, 5);
+        newEntry.quantity = 1;
+        newEntry.day = findElement(days, DAYSLENGTH, date.dayOfmonth);
+        newEntry.month = findElement(months, MONTHSLENGTH, date.month);
+        newEntry.year = findElement(years, YEARSLENGTH, date.year);
+    }
+    else
+    {
+        //strcpy((char*)newEntry.name, (char*)foodList[oldEntry].name);
+        int8_t j;
+        for(j = 0; j < MAX_FOOD_NAME_LENGTH-1; j++)
+            newEntry.name[j] = foodList[oldEntry].name[j];
+        newEntry.day = foodList[oldEntry].day;
+        newEntry.quantity = foodList[oldEntry].quantity;
+        newEntry.month = foodList[oldEntry].month;
+        newEntry.year = foodList[oldEntry].year;
+    }
     Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
     Graphics_clearDisplay(&g_sContext);
     //I FIRST PRINT ALL THE TEXT
     //printing of name section
-    Graphics_drawString(&g_sContext, "name:", AUTO_STRING_LENGTH, NAMEX, NAMEY,
-    true);
+    Graphics_drawString(&g_sContext, "name:", AUTO_STRING_LENGTH, NAMEX,
+    NAMEY,
+                        true);
     //printing of quantity section
-    Graphics_drawString(&g_sContext, "quantity:", AUTO_STRING_LENGTH, QUANTITYX,
-    QUANTITYY,
+    Graphics_drawString(&g_sContext, "quantity:", AUTO_STRING_LENGTH,
+    QUANTITYX,
+                        QUANTITYY,
                         true);
     //printing of date section
-    Graphics_drawString(&g_sContext, "date:", AUTO_STRING_LENGTH, DATEX, DATEY,
-    true);
+    Graphics_drawString(&g_sContext, "date:", AUTO_STRING_LENGTH, DATEX,
+    DATEY,
+                        true);
     Graphics_drawString(&g_sContext, "/", AUTO_STRING_LENGTH, DAYSEPARATOR,
     DATEBUTTONY + CHARBUTTONTEXTOFFSET,
                         true);
-    Graphics_drawString(&g_sContext, "/", AUTO_STRING_LENGTH, MONTHSEPARATOR,
-    DATEBUTTONY + CHARBUTTONTEXTOFFSET,
+    Graphics_drawString(&g_sContext, "/", AUTO_STRING_LENGTH,
+    MONTHSEPARATOR,
+                        DATEBUTTONY + CHARBUTTONTEXTOFFSET,
                         true);
     //AND SECONDLY I PRINT ALL THE BUTTONS
     uint8_t i;
@@ -117,32 +135,92 @@ void enableAddFoodSelection(uint8_t i)
     }
 }
 
-void changeSelected(uint8_t i, int8_t direction)
+void changeSelected(uint8_t i, int8_t direction) //this function handles the editing for the newEntry struct
 {
     switch (i)
     {
+    //name buttons handlers
     case 0:
     case 1:
     case 2:
     case 3:
     case 4:
+        //checks if values are in range, and the new direction
         if ((direction == 1 && newEntry.name[i] < NAMESELECTIONLENGTH - 1)
                 || (direction == -1 && newEntry.name[i] > 0))
             newEntry.name[i] += direction;
         break;
+        //quantity handler
     case 5:
         if ((direction == 1 && newEntry.quantity < 9)
                 || (direction == -1 && newEntry.quantity > 1))
             newEntry.quantity += direction;
         break;
+        //day handler
     case 6:
-        if ((direction == 1 && newEntry.quantity < 9)
-                        || (direction == -1 && newEntry.quantity > 1))
-                    newEntry.quantity += direction;
+        switch (newEntry.month + 1)
+        {
+        //the maximum days depends on the month
+        //max = 31
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            if ((direction == 1 && newEntry.day < 30)
+                    || (direction == -1 && newEntry.day > 0))
+                newEntry.day += direction;
+            break;
+        case 2:
+            //max could be either 28 or 29 depending on year
+            if (years[newEntry.year] % 4 == 0)
+            {
+                if ((direction == 1 && newEntry.day < 28)
+                        || (direction == -1 && newEntry.day > 0))
+                    newEntry.day += direction;
+            }
+            else
+            {
+                if ((direction == 1 && newEntry.day < 27)
+                        || (direction == -1 && newEntry.day > 0))
+                    newEntry.day += direction;
+            }
+            break;
+            //max = 30
+        default:
+            if ((direction == 1 && newEntry.day < 29)
+                    || (direction == -1 && newEntry.day > 0))
+                newEntry.day += direction;
+            break;
+        }
         break;
+        //months handler
     case 7:
+        if ((direction == 1 && newEntry.month < MONTHSLENGTH - 1)
+                || (direction == -1 && newEntry.month > 0))
+        {
+            if (newEntry.day > 27)
+            {
+                newEntry.day = 27;
+                printDataButton(6, false);
+            }
+            newEntry.month += direction;
+        }
         break;
+        //years handler
     case 8:
+        if ((direction == 1 && newEntry.year < YEARSLENGTH)
+                || (direction == -1 && newEntry.year > 0))
+        {
+            if (newEntry.day > 27)
+            {
+                newEntry.day = 27;
+                printDataButton(6, false);
+            }
+            newEntry.year += direction;
+        }
         break;
     }
     printDataButton(i, true);

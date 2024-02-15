@@ -54,6 +54,7 @@ Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/wdt_a.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/sysctl.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/flash.h
+Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
 Logic/logic.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/logic.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/assert.h
 Logic/logic.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Drivers/init.h
@@ -167,6 +168,8 @@ C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/sysctl.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/devices/msp432p4xx/driverlib/flash.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 
 C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h:
 

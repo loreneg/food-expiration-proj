@@ -59,6 +59,7 @@ main.obj: ../Logic/logic.h
 main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
 main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
 main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
+main.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
 
 ../main.c:
 
@@ -177,4 +178,6 @@ C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 

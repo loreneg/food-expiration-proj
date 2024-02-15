@@ -61,10 +61,11 @@ Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expirati
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
-Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h
-Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
 Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
+Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
+Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h
+Logic/Graphics/addFoodGraphics.obj: C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h
 
 ../Logic/Graphics/addFoodGraphics.c:
 
@@ -188,11 +189,13 @@ C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
-C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h:
-
-C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h:
-
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/graphicsContext.h:
+
+C:/Users/MACHCREATOR/workspace_v12/simplelink_msp432p4_sdk_3_40_01_02/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/grlib.h:
 

@@ -15,8 +15,24 @@ uint8_t length = 0;     //used length of the foodList array
 uint8_t flselected = 0; //selected variable for the foodlist section
 uint8_t afselected = 0; //selected variable for the add food section
 
-//This function allows us to print the month's name instead of the number
+//this function returns the index of an array value, 0 if not in range
+uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value)
+{
+    uint8_t i = 0;
+    while (++i < length)
+        if (a[i] == value)
+            return i;
+    return 0;
+}
 
+//returns quantity in char
+
+uint8_t getQuantity(FoodItem_t f)
+{
+    return f.quantity + 48;
+}
+
+//This function allows us to print the month's name instead of the number
 void convertMonthToString(uint8_t month, char *month_string)
 {
     switch (month)
@@ -47,6 +63,9 @@ void convertMonthToString(uint8_t month, char *month_string)
         break;
     case 0x09:
         sprintf(month_string, "Sep");
+        break;
+    case 0x10:
+        sprintf(month_string, "Oct");
         break;
     case 0x11:
         sprintf(month_string, "Nov");
@@ -92,12 +111,14 @@ void _hwInit()
     int i;
     for (i = 0; i < MAX_FOOD_ITEMS_COUNT; i++)
     {
-        sprintf(foodList[i].name, "%d", i);
+        int8_t j;
+        for(j = 0; j < 5; j++)
+            foodList[i].name[j] = j;
         foodList[i].quantity = 6;
         RTC_C_Calendar date = RTC_C_getCalendarTime();
-        foodList[i].day = date.dayOfmonth;
-        foodList[i].month = date.month;
-        foodList[i].year = date.year;
+        foodList[i].day = findElement(days, DAYSLENGTH, date.dayOfmonth);
+        foodList[i].month = findElement(months, MONTHSLENGTH, date.month);
+        foodList[i].year = findElement(years, YEARSLENGTH, date.year);
     }
 }
 

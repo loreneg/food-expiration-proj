@@ -59,6 +59,7 @@ Logic/Interrupts/RTCinterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expirati
 Logic/Interrupts/RTCinterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
 Logic/Interrupts/RTCinterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
 Logic/Interrupts/RTCinterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
+Logic/Interrupts/RTCinterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
 
 ../Logic/Interrupts/RTCinterrupts.c:
 
@@ -177,4 +178,6 @@ C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 

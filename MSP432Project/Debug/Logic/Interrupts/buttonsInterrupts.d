@@ -59,6 +59,7 @@ Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expi
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/menuGraphics.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h
+Logic/Interrupts/buttonsInterrupts.obj: C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
 Logic/Interrupts/buttonsInterrupts.obj: C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
 
@@ -179,6 +180,8 @@ C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/foodListGraphics.h:
 
 C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/Graphics/addFoodGraphics.h:
+
+C:/Users/MACHCREATOR/fridgeRep/food-expiration-proj/MSP432Project/Logic/logic.h:
 
 C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h:
 
