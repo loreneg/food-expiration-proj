@@ -18,7 +18,7 @@ Graphics_Button ListButton = { 0, 128, 0, 12, 0, false, 0x001733, 0x001733,
                                0x002ee6,
                                GRAPHICS_COLOR_WHITE,
                                GRAPHICS_COLOR_WHITE, 0, (HEIGHT - 6) / 2,
-                               "test", &g_sFontFixed6x8 };
+                               "", &g_sFontFixed6x8 };
 
 char n[WIDTHCHAR + 1];
 char month[4];  //3 char + terminator char
@@ -49,12 +49,13 @@ void showFoodList()
     Graphics_clearDisplay(&g_sContext);
     //Graphics_drawStringCentered(&g_sContext, "FOODLIST", AUTO_STRING_LENGTH, LCD_WIDTH / 2, LCD_HEIGHT / 2, TRANSPARENT_TEXT);
     uint8_t i;
-    for (i = page * LINES; i < LINES * (page + 1); i++)
+    for (i = page * LINES; i < min(LINES * (page + 1), length); i++)
         printButton(i, i % LINES, false);
 }
 
 void initSelection()
 {
+    flselected = 0;
     CS_initClockSignal(CS_MCLK, CS_MODOSC_SELECT, CS_CLOCK_DIVIDER_4); //small overclock for showing data faster 6MHz
     oldSelected = 0;
     page = 0;

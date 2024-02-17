@@ -6,11 +6,10 @@ void RTC_C_IRQHandler(void)
 
     status = RTC_C_getEnabledInterruptStatus();
     RTC_C_clearInterruptFlag(status);
-
-    if (status & RTC_C_TIME_EVENT_INTERRUPT)
+    //interrupt handler for RTC event
+    //called every time a new day arrives
+    if (status & RTC_C_TIME_EVENT_INTERRUPT) //if there's expired food, led becomes red
     {
-
-        GPIO_toggleOutputOnPin(GPIO_PORT_P1, GPIO_PIN0);
-
+        expiredFood();
     }
 }

@@ -15,6 +15,27 @@ uint8_t length = 0;     //used length of the foodList array
 uint8_t flselected = 0; //selected variable for the foodlist section
 uint8_t afselected = 0; //selected variable for the add food section
 
+void expiredFood()
+{
+    int8_t expired = 0;
+    RTC_C_Calendar date = RTC_C_getCalendarTime();
+    date.year -= 0x2000;
+    uint8_t i;
+    for (i = 0; i < length && expired == 0; ++i)
+    {
+        if ((years[foodList[i].year] < date.year)    //if current year > food year
+        || (years[foodList[i].year] == date.year && months[foodList[i].month] < date.month) //if current month > food month in same year
+                || (years[foodList[i].year] == date.year
+                        && months[foodList[i].month] == date.month
+                        && days[foodList[i].day] < date.dayOfmonth)) //if current day > food day in same month and year
+            expired = 1;
+    }
+    if(expired)
+        GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);   //led turns on
+    else
+        GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);   //led turns off
+}
+
 //this function returns the index of an array value, 0 if not in range
 uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value)
 {
@@ -25,13 +46,30 @@ uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value)
     return 0;
 }
 
+void removeItem(FoodItem_t f[], uint8_t *length, uint8_t i)
+{
+    if (*length > 0 && i < *length)
+    {
+        uint8_t j;
+        for (j = 0; j < *length; ++j)
+        {
+            if (j >= i && j < *length - 1)
+                f[j] = f[j + 1];
+
+        }
+        (*length)--;
+    }
+}
+
 void customDelay(uint64_t CYCLES)
 {
     uint64_t j;
 
-    //this could throw a warning: Detected SW delay loop using empty loop. Recommend using a timer module instead
-    //but the creator has decided not to use another timer to implement this function
-    for(j=0;j<CYCLES;j++){}
+//this could throw a warning: Detected SW delay loop using empty loop. Recommend using a timer module instead
+//but the creator has decided not to use another timer to implement this function
+    for (j = 0; j < CYCLES; j++)
+    {
+    }
 }
 
 //returns quantity in char
@@ -88,40 +126,40 @@ void convertMonthToString(uint8_t month, char *month_string)
 
 void _hwInit()
 {
-    //Initializes all unused ports in order to address power consumption, this function is not mandatory and should just remove the warning (see the implementation for further info on why the warning is still present):
-    //"Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins."
+//Initializes all unused ports in order to address power consumption, this function is not mandatory and should just remove the warning (see the implementation for further info on why the warning is still present):
+//"Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins."
     _lowPowerInit();
 
-    //sets core voltage level and number of wait states used by flash controller for read operation
+//sets core voltage level and number of wait states used by flash controller for read operation
     _PCM_Flash_WDT_Init();
 
-    //initialize RTC for accurate time tracking
+//initialize RTC for accurate time tracking
 
     _RTCInit();
 
-    //initialize LED on Pin 1.0
+//initialize LED on Pin 1.0
     _ledInit();
 
-    //initialize TimerA2 and TimerA3 into upMode
-    //_timersInit();
+//initialize TimerA2 and TimerA3 into upMode
+//_timersInit();
 
-    //initialize buttons S1 and S2 (pins J4.32 and J4.33) on BoosterPack Module and Joystick button (Port4 PIN 1)
+//initialize buttons S1 and S2 (pins J4.32 and J4.33) on BoosterPack Module and Joystick button (Port4 PIN 1)
     _buttonsInit();
 
-    // it is possible to initialize Joystick or accelerometer only if they have been selected by the user in the menu, but this configuration could allow to use both at the same time
+// it is possible to initialize Joystick or accelerometer only if they have been selected by the user in the menu, but this configuration could allow to use both at the same time
 
-    //initialize ADC for Joystick
+//initialize ADC for Joystick
     _joystickInit();
 
-    //initialize LCD
+//initialize LCD
     _graphicsInit();
 
-    //variable init. Just for testing
+//variable init. Just for testing
     int i;
     for (i = 0; i < length; i++)
     {
         int8_t j;
-        for(j = 0; j < 5; j++)
+        for (j = 0; j < 5; j++)
             foodList[i].name[j] = j;
         foodList[i].quantity = 6;
         RTC_C_Calendar date = RTC_C_getCalendarTime();
@@ -134,7 +172,7 @@ void _hwInit()
 // start the first fridge image at the startup
 void start_graphics()
 {
-    // outputs fridge image
+// outputs fridge image
     startupImage();
 }
 
@@ -146,11 +184,11 @@ void start_menu()
 
 void activate_peripherals()
 {
-    // enable master interrupt
+// enable master interrupt
     Interrupt_enableMaster();
 
-    // start first timer (TIMER_A3)
-    //Timer_A_startCounter(TIMER_A3_BASE, TIMER_A_UP_MODE);
+// start first timer (TIMER_A3)
+//Timer_A_startCounter(TIMER_A3_BASE, TIMER_A_UP_MODE);
     ADC14_toggleConversionTrigger();
 }
 
@@ -180,11 +218,11 @@ void drawSelectionList(uint64_t y)
 {
     if (y > 9800 && flselected > 0)
     {
-        flselected = (uint8_t) (--flselected % length);
+        flselected--;
     }
-    else if (y < 7000)
+    else if (y < 7000 && flselected < length - 1)
     {
-        flselected = (uint8_t) (++flselected % length); // Selection_t casting in order to avoid "enumerated type mixed with another type" warning
+        flselected++;
     }
 
     enableSelection(flselected);

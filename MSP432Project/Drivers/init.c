@@ -58,7 +58,7 @@ void _PCM_Flash_WDT_Init()
 void _RTCInit()
 {
 
-    const RTC_C_Calendar currentTime = { 0x55, 0x55, 0x17, 0x06, 0x13, 0x02,
+    const RTC_C_Calendar currentTime = { 0x50, 0x59, 0x23, 0x06, 0x17, 0x02,
                                          0x2024 };
 
     GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_PJ,
@@ -71,7 +71,7 @@ void _RTCInit()
     /* Initializing RTC with current time */
     RTC_C_initCalendar(&currentTime, RTC_C_FORMAT_BCD);
     /* Sets interrupt for each midnight */
-    RTC_C_setCalendarEvent(RTC_C_CALENDAREVENT_MINUTECHANGE);
+    RTC_C_setCalendarEvent(RTC_C_CALENDAREVENT_HOURCHANGE);
     /* Sets interrupt flags for calendar registers ready to read and event */
     RTC_C_clearInterruptFlag(RTC_C_TIME_EVENT_INTERRUPT);
     RTC_C_enableInterrupt(RTC_C_TIME_EVENT_INTERRUPT);

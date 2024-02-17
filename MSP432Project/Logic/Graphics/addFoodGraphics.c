@@ -27,6 +27,17 @@ GRAPHICS_COLOR_WHITE,
                                GRAPHICS_COLOR_WHITE, 0, 0, "test",
                                &g_sFontFixed6x8 };
 
+void copyFoodItem(FoodItem_t *f1, FoodItem_t *f2)
+{
+    int8_t j;
+    for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
+        f1->name[j] = f2->name[j];
+    f1->day = f2->day;
+    f1->quantity = f2->quantity;
+    f1->month = f2->month;
+    f1->year = f2->year;
+}
+
 void setButton(uint16_t xMin, uint16_t yMin, int8_t *text, uint8_t nchar) //function for setting up a button. nchar is the number of chars that you want inside of the button - 1
 {
     dataButton.xMin = xMin;
@@ -88,13 +99,7 @@ void showAddFood(int8_t oldEntry)   //index of entry to modify
     {
         //strcpy((char*)newEntry.name, (char*)foodList[oldEntry].name);
         modified = oldEntry;
-        int8_t j;
-        for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
-            newEntry.name[j] = foodList[oldEntry].name[j];
-        newEntry.day = foodList[oldEntry].day;
-        newEntry.quantity = foodList[oldEntry].quantity;
-        newEntry.month = foodList[oldEntry].month;
-        newEntry.year = foodList[oldEntry].year;
+        copyFoodItem(&newEntry, &foodList[oldEntry]);
     }
     Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
     Graphics_clearDisplay(&g_sContext);
@@ -232,21 +237,17 @@ void confirmChoise()
 {
     if (modified != -1) //if true modify old entry
     {
-        int8_t j;
-        for (j = 0; j < MAX_FOOD_NAME_LENGTH - 1; j++)
-            foodList[modified].name[j] = newEntry.name[j];
-        foodList[modified].day = newEntry.day;
-        foodList[modified].quantity = newEntry.quantity;
-        foodList[modified].month = newEntry.month;
-        foodList[modified].year = newEntry.year;
+        copyFoodItem(&foodList[modified], &newEntry);
         currSelection = FOODLIST;
         initSelection();
+        modified = -1;
     }
     else
     {
         //add newEntry to array/list
+        copyFoodItem(&foodList[length++], &newEntry);   //add newEntry to foodList
         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
-        Graphics_drawString(&g_sContext, "CIBO AGGIUNTO!", AUTO_STRING_LENGTH,
+        Graphics_drawString(&g_sContext, "FOOD HAS BEEN ADDED!", AUTO_STRING_LENGTH,
         NAMEX,
                             NAMEY,
                             true);
@@ -254,5 +255,5 @@ void confirmChoise()
         afselected = 0;
         showAddFood(-1);
     }
-
+    expiredFood();  //checks if food has expired
 }

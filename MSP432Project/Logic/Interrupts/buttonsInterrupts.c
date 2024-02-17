@@ -47,14 +47,16 @@ void PORT3_IRQHandler(void)
             case FOODLIST:
                 if (length > 0)
                 {
-                    flselected = 0;
                     initSelection();
                     notOnMenuScreen = 1;    //quit menu
                 }
                 else
                 {
+                    Graphics_setForegroundColor(&g_sContext,
+                    GRAPHICS_COLOR_WHITE);
                     Graphics_drawString(&g_sContext, "NESSUN CIBO IN LISTA!!",
-                                        AUTO_STRING_LENGTH, 0, 0,
+                    AUTO_STRING_LENGTH,
+                                        0, 0,
                                         true);
                 }
                 break;
@@ -93,6 +95,21 @@ void PORT5_IRQHandler(void)
     /* check if we received P5.1 interrupt */
     if ((status & GPIO_PIN1))
     {
-        menuUnlocked = 1;   //The menu gets unlocked
+        if (menuUnlocked && notOnMenuScreen && currSelection == FOODLIST)
+        {
+            removeItem(foodList, &length, flselected);
+            expiredFood();  //I check if food has expired
+            if (length > 0)
+                initSelection();
+            else
+            {
+                notOnMenuScreen = 0;
+                drawMenu();
+                drawSelection(8000);
+            }
+
+        }
+        else
+            menuUnlocked = 1;   //The menu gets unlocked
     }
 }
