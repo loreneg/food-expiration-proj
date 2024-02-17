@@ -11,7 +11,7 @@
 Selection_t currSelection = FOODLIST;
 
 FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT];
-uint8_t length = 0;     //used length of the foodList array
+uint8_t length = 10;     //used length of the foodList array
 uint8_t flselected = 0; //selected variable for the foodlist section
 uint8_t afselected = 0; //selected variable for the add food section
 

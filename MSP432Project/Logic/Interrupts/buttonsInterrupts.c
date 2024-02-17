@@ -54,7 +54,7 @@ void PORT3_IRQHandler(void)
                 {
                     Graphics_setForegroundColor(&g_sContext,
                     GRAPHICS_COLOR_WHITE);
-                    Graphics_drawString(&g_sContext, "NESSUN CIBO IN LISTA!!",
+                    Graphics_drawString(&g_sContext, "NO FOOD IN THE LIST!!",
                     AUTO_STRING_LENGTH,
                                         0, 0,
                                         true);

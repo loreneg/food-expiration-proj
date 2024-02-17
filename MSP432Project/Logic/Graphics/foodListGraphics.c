@@ -51,6 +51,12 @@ void showFoodList()
     uint8_t i;
     for (i = page * LINES; i < min(LINES * (page + 1), length); i++)
         printButton(i, i % LINES, false);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+    Graphics_drawString(&g_sContext, "s1:delete s2:modify",
+                                AUTO_STRING_LENGTH,
+                                0,
+                                BUTTONSLISTINGX,
+                                true);
 }
 
 void initSelection()

@@ -104,6 +104,10 @@ void showAddFood(int8_t oldEntry)   //index of entry to modify
     Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
     Graphics_clearDisplay(&g_sContext);
     //I FIRST PRINT ALL THE TEXT
+    Graphics_drawString(&g_sContext, "USE ANALOG TO MOVE", AUTO_STRING_LENGTH,
+                        0, 0, true);
+    Graphics_drawString(&g_sContext, "PRESS S2 TO CONFIRM", AUTO_STRING_LENGTH,
+                        0, CHARBUTTONHEIGHT, true);
     //printing of name section
     Graphics_drawString(&g_sContext, "name:", AUTO_STRING_LENGTH, NAMEX,
     NAMEY,
@@ -245,11 +249,12 @@ void confirmChoise()
     else
     {
         //add newEntry to array/list
-        copyFoodItem(&foodList[length++], &newEntry);   //add newEntry to foodList
+        copyFoodItem(&foodList[length++], &newEntry); //add newEntry to foodList
         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
-        Graphics_drawString(&g_sContext, "FOOD HAS BEEN ADDED!", AUTO_STRING_LENGTH,
-        NAMEX,
-                            NAMEY,
+        Graphics_drawString(&g_sContext, "FOOD HAS BEEN ADDED!",
+                            AUTO_STRING_LENGTH,
+                            ADDEDFOODX,
+                            ADDEDFOODY,
                             true);
         customDelay(100000);
         afselected = 0;
