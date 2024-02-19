@@ -19,7 +19,7 @@
 # About
 
 Welcome to **`IoT Fridge Guardian`**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
-This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
+This project aims to enhance your food storage experience by providing real-time monitoring with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
 <div align="center">
@@ -69,9 +69,6 @@ Access a user-friendly menu to seamlessly add food items. Input the food item's 
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 <br><br>
 
-:clock6: **`Timely expiry alerts`**  
-Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
-
 <div align="right">
     
 [Return to Top](#iot-fridge-guardian-with-msp432-p401r)
@@ -87,7 +84,7 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 <br>
 
 #### :paperclip: Presentation:  
-[slides](...link)
+[slides](https://docs.google.com/presentation/d/1rZ9iQfn5k4NT6AfTBC7GB6xYHdCAeOiXRgEEJqAVlfA/edit?usp=sharing)
 
 <div align="right">
     
