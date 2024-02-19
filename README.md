@@ -54,9 +54,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 
 
-# Project layout
-
-### Code organization tree
+# Project structure
 
 ```bash
 MSP432-Fridge-Guardian-Project
@@ -83,7 +81,7 @@ MSP432-Fridge-Guardian-Project
 # Demonstration
 
 #### :movie_camera: Video:  
-[![ ](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+[![ ](http://img.youtube.com/vi/https://youtu.be/1fKpxXr2Xhc/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
 <br>
 
 #### :paperclip: Presentation:  
