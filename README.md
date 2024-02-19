@@ -83,12 +83,8 @@ MSP432-Fridge-Guardian-Project
 #### :movie_camera: Video:
 
 <a href="http://www.youtube.com/watch?v=1fKpxXr2Xhc">
-    <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="300" height="150">
+    <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="200" height="150">
 </a>
-
-<img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" width="100" height="100">
-  [![](https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg)](http://www.youtube.com/watch?v=1fKpxXr2Xhc "Video Title")
-</img>
 <br><br>
 
 #### :paperclip: Presentation:  
