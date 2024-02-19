@@ -59,7 +59,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 #### :movie_camera: Video:
 
 <a href="http://www.youtube.com/watch?v=1fKpxXr2Xhc">
-    <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="150" height="100">
+    <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="150" height="80">
 </a>
 <br>
 
