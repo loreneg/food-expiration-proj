@@ -1,15 +1,17 @@
-# IoT Fridge Guardian with MSP432-P401R
+# Fridge Guardian with MSP432-P401R
 
 <details>
 <summary><b>Table of contents</b></summary>
 
 1. [About](#about)
-2. [Project layout](#project-layout)
-3. [Functionalities](#functionalities-description)
-4. [Demonstration](#demonstration)
-5. [Requirements](#requirements)
+2. [Functionalities](#functionalities)
+3. [Demonstration](#demonstration)
+4. [Requirements](#requirements)
+5. [Project layout](#project-code-structure)
 6. [Programming language](#programming-language)
-7. [Team members & contributions](#team-members--contributions)
+7. [How to build and run](#how-to-build-and-run)
+8. [User guide](#user-guide)
+9. [Team members & contributions](#team-members--contributions)
 
 </details>
 <br>
@@ -19,7 +21,7 @@
 # About
 
 Welcome to **`IoT Fridge Guardian`**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
-This project aims to enhance your food storage experience by providing real-time monitoring and expiry reminders & alerts with intuitive controls for your smart fridge.
+This project aims to enhance your food storage experience by providing real-time monitoring with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
 <div align="center">
@@ -27,33 +29,8 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 </div>
 
 <div align="right">
-    
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
 
-</div>
-
-
-# Project layout
-
-### Code organization tree
-
-```bash
-MSP432-Fridge-Guardian-Project
-├───Debug                         # compiled files
-├───Drivers
-│   └───Lcd                       # LCD screen related files
-├───Logic
-│   ├───Graphics                  # files to manage views
-│   └───Interrupts                # interrupts handlers
-├───targetConfigs                 # target configuration
-├───Images
-├─── README.md                    # project overview file
-└─── main.c                       # main source code file
-```
-
-<div align="right">
-
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -69,12 +46,9 @@ Access a user-friendly menu to seamlessly add food items. Input the food item's 
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
 <br><br>
 
-:clock6: **`Timely expiry alerts`**  
-Receive a notification one day before a food item is set to expire. Alerts are designed to keep you informed and prevent unnecessary waste.
-
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -82,16 +56,20 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
 # Demonstration
 
-#### :movie_camera: Video:  
-[![ ](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+#### :movie_camera: Video:
+
+<a href="http://www.youtube.com/watch?v=1fKpxXr2Xhc">
+    <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="150" height="90">
+</a>
 <br>
 
 #### :paperclip: Presentation:  
-[slides](...link)
+[slides](https://docs.google.com/presentation/d/1rZ9iQfn5k4NT6AfTBC7GB6xYHdCAeOiXRgEEJqAVlfA/edit?usp=sharing)
+<br>
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -123,7 +101,31 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
+
+
+# Project code structure
+
+```bash
+MSP432-Fridge-Guardian
+├───Debug                     # compiled files
+├───Drivers
+│   └───Lcd                   # LCD screen related files
+├───Logic
+│   ├───Graphics              # files to manage views
+│   └───Interrupts            # interrupts handlers
+├───targetConfigs             # target configuration
+├───Images
+├─── README.md                # project overview file
+└─── main.c                   # main source code file
+```
+
+<div align="right">
+
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -135,7 +137,31 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
+
+
+# How to build and run
+
+...
+
+<div align="right">
+    
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
+
+
+# User guide
+
+...
+
+<div align="right">
+    
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -148,11 +174,10 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 - Julia Bernon  
 - Lorenzo Negut  
 
-<br>
-Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.
+*Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.*  
 
 <div align="right">
 
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
