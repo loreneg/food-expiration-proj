@@ -11,7 +11,7 @@
 Selection_t currSelection = FOODLIST;     //the current section in the main menu
 
 FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT]; //The actual array that contains all the food items
-uint8_t length = 0;     //used length of the foodList array
+uint8_t length = 4;     //used length of the foodList array
 
 //these 2 are needed for the various interfaces
 
@@ -21,12 +21,10 @@ uint8_t afselected = 0; //selected variable for the add food section
 int8_t hasExpired(FoodItem_t f)
 {
     RTC_C_Calendar date = RTC_C_getCalendarTime();
-    date.year -= 0x2000;                //the date is saves with only the last 2 characters
+    date.year -= 0x2000;     //the date is saves with only the last 2 characters
     if ((years[f.year] < date.year)    //if current year > food year
-            || (years[f.year] == date.year
-                    && months[f.month] < date.month) //if current month > food month in same year
-            || (years[f.year] == date.year
-                    && months[f.month] == date.month
+            || (years[f.year] == date.year && months[f.month] < date.month) //if current month > food month in same year
+            || (years[f.year] == date.year && months[f.month] == date.month
                     && days[f.day] < date.dayOfmonth)) //if current day > food day in same month and year
         return 1;
     return 0;
@@ -168,6 +166,49 @@ void _hwInit()
 
 //initialize LCD
     _graphicsInit();
+/* test for presentation video
+//milk, 2, 22 feb 24
+    foodList[0].name[0] = 13;
+    foodList[0].name[1] = 9;
+    foodList[0].name[2] = 12;
+    foodList[0].name[3] = 11;
+    foodList[0].name[4] = 0;
+    foodList[0].quantity = 2;
+    foodList[0].day = 21;
+    foodList[0].month = 1;
+    foodList[0].year = 0;
+//eggs, 6, 18 feb 24
+    foodList[1].name[0] = 5;
+    foodList[1].name[1] = 7;
+    foodList[1].name[2] = 7;
+    foodList[1].name[3] = 19;
+    foodList[1].name[4] = 0;
+    foodList[1].quantity = 6;
+    foodList[1].day = 17;
+    foodList[1].month = 1;
+    foodList[1].year = 0;
+//chick, 4, 19 feb 24
+    foodList[2].name[0] = 3;
+    foodList[2].name[1] = 8;
+    foodList[2].name[2] = 9;
+    foodList[2].name[3] = 3;
+    foodList[2].name[4] = 11;
+    foodList[2].quantity = 2;
+    foodList[2].day = 18;
+    foodList[2].month = 1;
+    foodList[2].year = 0;
+//onion, 9, 8 dec 26
+    foodList[3].name[0] = 15;
+    foodList[3].name[1] = 14;
+    foodList[3].name[2] = 9;
+    foodList[3].name[3] = 15;
+    foodList[3].name[4] = 14;
+    foodList[3].quantity = 9;
+    foodList[3].day = 25;
+    foodList[3].month = 11;
+    foodList[3].year = 2;
+*/
+    expiredFood();
 }
 
 // start the first fridge image at the startup
