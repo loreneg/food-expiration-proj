@@ -7,7 +7,7 @@
 2. [Functionalities](#functionalities)
 3. [Demonstration](#demonstration)
 4. [Requirements](#requirements)
-5. [Project layout](#project-layout)
+5. [Project layout](#project-code-structure)
 6. [Programming language](#programming-language)
 7. [How to build and run](#how-to-build-and-run)
 8. [User guide](#user-guide)
