@@ -105,9 +105,9 @@ Receive a notification one day before a food item is set to expire. Alerts are d
       margin-left: 100px;
   }
 </style>
-```
+
 <img src="/Images/MSP432.jpg" width="200" height="300" alt="Example Image" class="indented-image">
-```
+
 <a> <img src="/Images/MSP432.jpg" width="200" height="300"> </a>
 <a> <img src="/Images/BoosterPack.jpeg" width="350" height="175"> </a>
 
@@ -115,15 +115,15 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   
-  <p style="margin-left: 100px;">
+  <pre>
     <img src="/Images/MSP432.jpg" width="200" height="300">
-  </p>
+  </pre>
   
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   
-  <p style="margin-left: 50px;">
+  <pre>
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
-  </p>
+  </pre>
   
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
