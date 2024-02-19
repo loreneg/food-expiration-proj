@@ -53,7 +53,6 @@ void setButton(uint16_t xMin, uint16_t yMin, int8_t *text, uint8_t nchar) //func
     dataButton.text = text;
 }
 
-
 //this function handles all the logic for printing a button, from positioning to what it contains
 void printDataButton(uint8_t i, bool selected)
 {
@@ -90,9 +89,8 @@ void printDataButton(uint8_t i, bool selected)
     Graphics_drawButton(&g_sContext, &dataButton);
 }
 
-
 //this function initializes all the interface
-void showAddFood(int8_t oldEntry)   //index of entry to modify, if -1 a new Item will be added to the list
+void showAddFood(int8_t oldEntry) //index of entry to modify, if -1 a new Item will be added to the list
 {
     if (oldEntry == -1)
     {
@@ -246,7 +244,7 @@ void changeSelected(uint8_t i, int8_t direction) //this function handles the edi
     printDataButton(i, true);
 }
 
-void confirmChoise()    //This function is called by pressing s2 in the interface
+void confirmChoise()   //This function is called by pressing s2 in the interface
 //it adds the new entry to the list, or modifies the old one
 {
     if (modified != -1) //if true modify old entry
@@ -259,16 +257,31 @@ void confirmChoise()    //This function is called by pressing s2 in the interfac
     else
     {
         //add newEntry to array/list
-        copyFoodItem(&foodList[length++], &newEntry); //add newEntry to foodList
-        Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
-        Graphics_drawString(&g_sContext, "FOOD HAS BEEN ADDED!",
-                            AUTO_STRING_LENGTH,
-                            ADDEDFOODX,
-                            ADDEDFOODY,
-                            true);
-        customDelay(100000);
-        afselected = 0;
-        showAddFood(-1);
+        if (length < MAX_FOOD_ITEMS_COUNT)
+        {
+            copyFoodItem(&foodList[length++], &newEntry); //add newEntry to foodList
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+            Graphics_drawString(&g_sContext, "FOOD HAS BEEN ADDED!",
+            AUTO_STRING_LENGTH,
+                                ADDEDFOODX,
+                                ADDEDFOODY,
+                                true);
+            customDelay(100000);
+            afselected = 0;
+            showAddFood(-1);
+        }
+        else
+        {
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+            Graphics_drawString(&g_sContext, "FOOD LIST IS FULL!",
+            AUTO_STRING_LENGTH,
+                                ADDEDFOODX,
+                                ADDEDFOODY,
+                                true);
+            customDelay(100000);
+            afselected = 0;
+            showAddFood(-1);
+        }
     }
     expiredFood();  //checks if food has expired
 }

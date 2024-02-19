@@ -2,7 +2,7 @@
 
 void ADC14_IRQHandler(void)
 {
-    /* ADC results buffer that can store both the Joystick results and accelerometer ones */
+    /* ADC results buffer that can store the Joystick results (x and y)*/
     uint16_t resultsBuffer[2];
 
     uint64_t status;
@@ -34,7 +34,7 @@ void ADC14_IRQHandler(void)
 
             if(resultsBuffer[1] < 7000 || resultsBuffer[1] > 9800)
                 drawSelectionList((uint64_t) resultsBuffer[1]);
-        }
+        }//our analog has had some isssues, so the parameters for the x are slightly different
         if(currSelection == ADDFOOD && notOnMenuScreen){
                     resultsBuffer[1] = ADC14_getResult(ADC_MEM1);
                     resultsBuffer[0] = ADC14_getResult(ADC_MEM0);
