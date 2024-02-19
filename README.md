@@ -102,7 +102,7 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 ### **Board & Booster pack**
 <style>
   .indented-image {
-      margin-left: 20px;
+      margin-left: 100px;
   }
 </style>
 
@@ -115,7 +115,7 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   
-  <p style="margin-left: 50px;">
+  <p style="margin-left: 100px;">
     <img src="/Images/MSP432.jpg" width="200" height="300">
   </p>
   
