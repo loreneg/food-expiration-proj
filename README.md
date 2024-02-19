@@ -107,13 +107,17 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 ### **Hardware**
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
+  <br>
   <div align=center>
     <a> <img src="/Images/MSP432.jpg" width="200" height="300"> </a>
   </div>
+  <br>
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
+  <br>
   <div align=center>
     <a> <img src="/Images/BoosterPack.jpeg" width="350" height="175"> </a>
   </div>
+  <br>
   :heavy_check_mark: Red LED for visual indicators.  
   :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
   :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
