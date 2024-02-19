@@ -100,10 +100,12 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 # Requirements
 
 ### **Board & Booster pack**
+<style>
+  .indented-image {
+      margin-left: 20px;
+  }
+</style>
 
-.indented-image {
-    margin-left: 20px;
-}
 <img src="/Images/MSP432.jpg" width="200" height="300" alt="Example Image" class="indented-image">
 
 <a> <img src="/Images/MSP432.jpg" width="200" height="300"> </a>
