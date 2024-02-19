@@ -99,29 +99,17 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
 # Requirements
 
-### **Board & Booster pack**
-<style>
-  .indented-image {
-      margin-left: 100px;
-  }
-</style>
-
-<img src="/Images/MSP432.jpg" width="200" height="300" alt="Example Image" class="indented-image">
-
-<a> <img src="/Images/MSP432.jpg" width="200" height="300"> </a>
-<a> <img src="/Images/BoosterPack.jpeg" width="350" height="175"> </a>
-
 ### **Hardware**
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   
-  <pre>
+  <pre style="background-color: transparent;">
     <img src="/Images/MSP432.jpg" width="200" height="300">
   </pre>
   
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   
-  <pre>
+  <pre style="background-color: transparent;">
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
   </pre>
   
