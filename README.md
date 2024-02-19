@@ -103,13 +103,13 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 
   :heavy_check_mark: MSP432-P401R microcontroller.  
   
-  <pre style="background-color: transparent;">
+  <pre style="margin-left: 20px;">
     <img src="/Images/MSP432.jpg" width="200" height="300">
   </pre>
   
   :heavy_check_mark: Booster board with a screen, analog inputs, and buttons.  
   
-  <pre style="background-color: transparent;">
+  <pre style="margin-left: 20px;">
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
   </pre>
   
