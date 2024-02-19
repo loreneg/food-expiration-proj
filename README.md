@@ -1,15 +1,17 @@
-# IoT Fridge Guardian with MSP432-P401R
+# Fridge Guardian with MSP432-P401R
 
 <details>
 <summary><b>Table of contents</b></summary>
 
 1. [About](#about)
-2. [Project layout](#project-layout)
-3. [Functionalities](#functionalities-description)
-4. [Demonstration](#demonstration)
-5. [Requirements](#requirements)
+2. [Functionalities](#functionalities)
+3. [Demonstration](#demonstration)
+4. [Requirements](#requirements)
+5. [Project layout](#project-layout)
 6. [Programming language](#programming-language)
-7. [Team members & contributions](#team-members--contributions)
+7. [How to build and run](#how-to-build-and-run)
+8. [User guide](#user-guide)
+9. [Team members & contributions](#team-members--contributions)
 
 </details>
 <br>
@@ -27,10 +29,29 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 </div>
 
 <div align="right">
-    
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
+
+
+
+# Functionalities
+
+:meat_on_bone: **`Intuitive food management menu`**  
+Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
+<br><br>
+
+:red_circle: **`Visual expiry indication`**  
+View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
+<br><br>
+
+<div align="right">
+    
+[Return to Top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
 
 
 # Project layout
@@ -53,25 +74,7 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
 
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
-
-</div>
-
-
-
-# Functionalities
-
-:meat_on_bone: **`Intuitive food management menu`**  
-Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
-<br><br>
-
-:red_circle: **`Visual expiry indication`**  
-View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
-<br><br>
-
-<div align="right">
-    
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -88,7 +91,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -120,7 +123,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -132,9 +135,17 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
+
+
+
+# How to build and run
+
+
+
+# User guide
 
 
 
@@ -150,6 +161,6 @@ Since we didn't have experience using this (or any other) board, we developted b
 
 <div align="right">
 
-[Return to Top](#iot-fridge-guardian-with-msp432-p401r)
+[Return to Top](#fridge-guardian-with-msp432-p401r)
 
 </div>
