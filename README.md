@@ -58,16 +58,16 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 ```bash
 MSP432-Fridge-Guardian
-├───Debug                         # compiled files
+├───Debug                     # compiled files
 ├───Drivers
-│   └───Lcd                       # LCD screen related files
+│   └───Lcd                   # LCD screen related files
 ├───Logic
-│   ├───Graphics                  # files to manage views
-│   └───Interrupts                # interrupts handlers
-├───targetConfigs                 # target configuration
+│   ├───Graphics              # files to manage views
+│   └───Interrupts            # interrupts handlers
+├───targetConfigs             # target configuration
 ├───Images
-├─── README.md                    # project overview file
-└─── main.c                       # main source code file
+├─── README.md                # project overview file
+└─── main.c                   # main source code file
 ```
 
 <div align="right">
