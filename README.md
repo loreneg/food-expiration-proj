@@ -85,7 +85,7 @@ MSP432-Fridge-Guardian-Project
 <a href="http://www.youtube.com/watch?v=1fKpxXr2Xhc">
     <img src="https://img.youtube.com/vi/1fKpxXr2Xhc/0.jpg" alt="Image" width="150" height="100">
 </a>
-<br><br>
+<br>
 
 #### :paperclip: Presentation:  
 [slides](https://docs.google.com/presentation/d/1rZ9iQfn5k4NT6AfTBC7GB6xYHdCAeOiXRgEEJqAVlfA/edit?usp=sharing)
