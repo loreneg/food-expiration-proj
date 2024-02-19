@@ -157,8 +157,8 @@ MSP432-Fridge-Guardian-Project
 - Lorenzo Negut  
 
 <br>
-Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.
-<br>
+Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.  
+<br><br>
 
 <div align="right">
 
