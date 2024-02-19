@@ -81,8 +81,9 @@ MSP432-Fridge-Guardian-Project
 # Demonstration
 
 #### :movie_camera: Video:  
-[![ ](https://img.youtu.be/1fKpxXr2Xhc/0.jpg)](http://www.youtube.com/watch?v=1fKpxXr2Xhc "Video Title")
+[![ ](https://youtu.be/1fKpxXr2Xhc/0.jpg)](http://www.youtube.com/watch?v=1fKpxXr2Xhc "Video Title")
 <br>
+http://img.youtube.com/vi/
 
 #### :paperclip: Presentation:  
 [slides](https://docs.google.com/presentation/d/1rZ9iQfn5k4NT6AfTBC7GB6xYHdCAeOiXRgEEJqAVlfA/edit?usp=sharing)
