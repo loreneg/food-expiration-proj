@@ -102,9 +102,9 @@ Receive a notification one day before a food item is set to expire. Alerts are d
 ### **Board & Booster pack**
 
 <div align="center">
-  <a> <img src="/Images/MSP432.jpg" width="400" height="150"> </a>
+  <a> <img src="/Images/MSP432.jpeg" width="400" height="150"> </a>
   <br></br>
-  <a> <img src="/Images/BoosterPack.jpg" width="400" height="150"> </a>
+  <a> <img src="/Images/BoosterPack.jpeg" width="400" height="150"> </a>
 </div>
 
 ### **Hardware**
