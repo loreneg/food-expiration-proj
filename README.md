@@ -54,30 +54,6 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 
 
-# Project code structure
-
-```bash
-MSP432-Fridge-Guardian
-├───Debug                     # compiled files
-├───Drivers
-│   └───Lcd                   # LCD screen related files
-├───Logic
-│   ├───Graphics              # files to manage views
-│   └───Interrupts            # interrupts handlers
-├───targetConfigs             # target configuration
-├───Images
-├─── README.md                # project overview file
-└─── main.c                   # main source code file
-```
-
-<div align="right">
-
-[Go to top](#fridge-guardian-with-msp432-p401r)
-
-</div>
-
-
-
 # Demonstration
 
 #### :movie_camera: Video:
@@ -125,6 +101,30 @@ MSP432-Fridge-Guardian
 
 <div align="right">
     
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
+
+
+# Project code structure
+
+```bash
+MSP432-Fridge-Guardian
+├───Debug                     # compiled files
+├───Drivers
+│   └───Lcd                   # LCD screen related files
+├───Logic
+│   ├───Graphics              # files to manage views
+│   └───Interrupts            # interrupts handlers
+├───targetConfigs             # target configuration
+├───Images
+├─── README.md                # project overview file
+└─── main.c                   # main source code file
+```
+
+<div align="right">
+
 [Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
