@@ -158,6 +158,7 @@ MSP432-Fridge-Guardian-Project
 
 <br>
 Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.
+<br>
 
 <div align="right">
 
