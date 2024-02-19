@@ -17,9 +17,10 @@ char c[4];
 uint8_t oldSelection = 0;
 
 FoodItem_t newEntry;    //item that will be added to the list
-int8_t modified = -1;
+int8_t modified = -1;   //if modified is -1, it means that we're adding an item
+//Otherwis it will be used as index for foodItemList
 
-//STANDARD DEFINITION OF A BUTTON
+//DEFAULT BUTTON DEFINITION
 Graphics_Button dataButton = { 0, 0, 0, 0, 1, false, 0x001733,
 GRAPHICS_COLOR_WHITE,
                                0x002ee6,
@@ -27,6 +28,7 @@ GRAPHICS_COLOR_WHITE,
                                GRAPHICS_COLOR_WHITE, 0, 0, "test",
                                &g_sFontFixed6x8 };
 
+//Deep copy implementation for foodItem
 void copyFoodItem(FoodItem_t *f1, FoodItem_t *f2)
 {
     int8_t j;
@@ -37,6 +39,8 @@ void copyFoodItem(FoodItem_t *f1, FoodItem_t *f2)
     f1->month = f2->month;
     f1->year = f2->year;
 }
+
+//function for setting up a button. nchar is the number of chars that you want inside of the button - 1
 
 void setButton(uint16_t xMin, uint16_t yMin, int8_t *text, uint8_t nchar) //function for setting up a button. nchar is the number of chars that you want inside of the button - 1
 {
@@ -49,6 +53,8 @@ void setButton(uint16_t xMin, uint16_t yMin, int8_t *text, uint8_t nchar) //func
     dataButton.text = text;
 }
 
+
+//this function handles all the logic for printing a button, from positioning to what it contains
 void printDataButton(uint8_t i, bool selected)
 {
     switch (i)
@@ -61,12 +67,12 @@ void printDataButton(uint8_t i, bool selected)
         c[0] = alphabet[newEntry.name[i]];
         c[1] = '\0';
         setButton(PRODNAMEX + i * 11, PRODNAMEY, (int8_t*) c, 0);
-        break;
+        break;  //name buttons
     case 5:
         c[0] = getQuantity(newEntry); //conversion from int to ascii number
         c[1] = '\0';
         setButton(QUANTITYBUTTONX, QUANTITYBUTTONY, (int8_t*) c, 0);
-        break;
+        break;  //quantity buttons
     case 6:
         sprintf(c, "%02x", days[newEntry.day]);
         setButton(DAYBUTTONX, DATEBUTTONY, (int8_t*) c, 1);
@@ -78,13 +84,15 @@ void printDataButton(uint8_t i, bool selected)
     case 8:
         sprintf(c, "%02x", years[newEntry.year]);
         setButton(YEARBUTTONX, DATEBUTTONY, (int8_t*) c, 1);
-        break;
+        break;  //date buttons
     }
     dataButton.selected = selected;
     Graphics_drawButton(&g_sContext, &dataButton);
 }
 
-void showAddFood(int8_t oldEntry)   //index of entry to modify
+
+//this function initializes all the interface
+void showAddFood(int8_t oldEntry)   //index of entry to modify, if -1 a new Item will be added to the list
 {
     if (oldEntry == -1)
     {
@@ -97,7 +105,6 @@ void showAddFood(int8_t oldEntry)   //index of entry to modify
     }
     else
     {
-        //strcpy((char*)newEntry.name, (char*)foodList[oldEntry].name);
         modified = oldEntry;
         copyFoodItem(&newEntry, &foodList[oldEntry]);
     }
@@ -136,6 +143,7 @@ void showAddFood(int8_t oldEntry)   //index of entry to modify
     printDataButton(0, true);
 }
 
+//this function handles the x axis changes in the interface
 void enableAddFoodSelection(uint8_t i)
 {
     if (i != oldSelection)
@@ -147,6 +155,7 @@ void enableAddFoodSelection(uint8_t i)
 }
 
 void changeSelected(uint8_t i, int8_t direction) //this function handles the editing for the newEntry struct
+//It has logic for accurate and consistent dates
 {
     switch (i)
     {
@@ -237,7 +246,8 @@ void changeSelected(uint8_t i, int8_t direction) //this function handles the edi
     printDataButton(i, true);
 }
 
-void confirmChoise()
+void confirmChoise()    //This function is called by pressing s2 in the interface
+//it adds the new entry to the list, or modifies the old one
 {
     if (modified != -1) //if true modify old entry
     {

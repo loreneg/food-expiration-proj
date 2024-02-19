@@ -18,24 +18,25 @@ void startupImage(){
     }
 }
 
+/*
+ * In this project we decided to change the msp clock in certain areas for ease of use and smoother experience:
+ * 3Mhz in the menu
+ * 3Mhz in the add food section
+ * 6Mhz in the food list section
+ * */
+
 void drawMenu(){
     CS_initClockSignal(CS_MCLK, CS_DCOCLK_SELECT, CS_CLOCK_DIVIDER_1);  //set clock to 3MHz (stock)
-    Graphics_drawImage(&g_sContext, &MENU, 0, 0);
+    Graphics_drawImage(&g_sContext, &MENU, 0, 0);                       //draws the actual menu
 }
 
 //Draw the menu when the FoodList item is selected
 void drawSelectionFoodList(){
-    Graphics_drawImage(&g_sContext, &FOODLISTSELECTED, 13, 59);
-    Graphics_drawImage(&g_sContext, &ADDFOOD, 13, 84);
-    //Graphics_drawStringCentered(&g_sContext, (int8_t*)"0", AUTO_STRING_LENGTH, 55, 70,OPAQUE_TEXT);
+    Graphics_drawImage(&g_sContext, &FOODLISTSELECTED, 13, 59);         //draws the food list selected image
+    Graphics_drawImage(&g_sContext, &ADDFOOD, 13, 84);                  //draws the add food not selected image
 }
 
 void drawSelectionAddFood(){
-    Graphics_drawImage(&g_sContext, &ADDFOODSELECTED, 13, 84);
-    Graphics_drawImage(&g_sContext, &FOODLIST, 13, 59);
-    //Graphics_drawStringCentered(&g_sContext, (int8_t*)"1", AUTO_STRING_LENGTH, 55, 70,OPAQUE_TEXT);
-}
-
-void drawNewSelection(uint8_t s){
-
+    Graphics_drawImage(&g_sContext, &ADDFOODSELECTED, 13, 84);          //draws the add food selected image
+    Graphics_drawImage(&g_sContext, &FOODLIST, 13, 59);                 //draws the food list image
 }

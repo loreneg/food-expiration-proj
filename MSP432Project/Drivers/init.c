@@ -71,7 +71,7 @@ void _RTCInit()
     /* Initializing RTC with current time */
     RTC_C_initCalendar(&currentTime, RTC_C_FORMAT_BCD);
     /* Sets interrupt for each midnight */
-    RTC_C_setCalendarEvent(RTC_C_CALENDAREVENT_HOURCHANGE);
+    RTC_C_setCalendarEvent(RTC_C_CALENDAREVENT_MIDNIGHT);
     /* Sets interrupt flags for calendar registers ready to read and event */
     RTC_C_clearInterruptFlag(RTC_C_TIME_EVENT_INTERRUPT);
     RTC_C_enableInterrupt(RTC_C_TIME_EVENT_INTERRUPT);

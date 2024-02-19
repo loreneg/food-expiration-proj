@@ -8,13 +8,31 @@
 #include "Logic/Graphics/menuGraphics.h"
 #include <stdio.h>
 
-Selection_t currSelection = FOODLIST;
+Selection_t currSelection = FOODLIST;     //the current section in the main menu
 
-FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT];
-uint8_t length = 10;     //used length of the foodList array
-uint8_t flselected = 0; //selected variable for the foodlist section
+FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT]; //The actual array that contains all the food items
+uint8_t length = 0;     //used length of the foodList array
+
+//these 2 are needed for the various interfaces
+
+uint8_t flselected = 0; //selected variable for the foodlist section (index for foodList)
 uint8_t afselected = 0; //selected variable for the add food section
 
+int8_t hasExpired(FoodItem_t f)
+{
+    RTC_C_Calendar date = RTC_C_getCalendarTime();
+    date.year -= 0x2000;                //the date is saves with only the last 2 characters
+    if ((years[f.year] < date.year)    //if current year > food year
+            || (years[f.year] == date.year
+                    && months[f.month] < date.month) //if current month > food month in same year
+            || (years[f.year] == date.year
+                    && months[f.month] == date.month
+                    && days[f.day] < date.dayOfmonth)) //if current day > food day in same month and year
+        return 1;
+    return 0;
+}
+
+//This function checks if food has expired, if so the red led turns on
 void expiredFood()
 {
     int8_t expired = 0;
@@ -23,14 +41,15 @@ void expiredFood()
     uint8_t i;
     for (i = 0; i < length && expired == 0; ++i)
     {
-        if ((years[foodList[i].year] < date.year)    //if current year > food year
-        || (years[foodList[i].year] == date.year && months[foodList[i].month] < date.month) //if current month > food month in same year
+        if ((years[foodList[i].year] < date.year)  //if current year > food year
+                || (years[foodList[i].year] == date.year
+                        && months[foodList[i].month] < date.month) //if current month > food month in same year
                 || (years[foodList[i].year] == date.year
                         && months[foodList[i].month] == date.month
                         && days[foodList[i].day] < date.dayOfmonth)) //if current day > food day in same month and year
             expired = 1;
     }
-    if(expired)
+    if (expired)
         GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);   //led turns on
     else
         GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);   //led turns off
@@ -46,6 +65,7 @@ uint8_t findElement(const uint8_t a[], const uint8_t length, uint8_t value)
     return 0;
 }
 
+//This function removes the item selected by index i
 void removeItem(FoodItem_t f[], uint8_t *length, uint8_t i)
 {
     if (*length > 0 && i < *length)
@@ -72,7 +92,7 @@ void customDelay(uint64_t CYCLES)
     }
 }
 
-//returns quantity in char
+//returns foodItem quantity in char format
 
 uint8_t getQuantity(FoodItem_t f)
 {
@@ -133,40 +153,21 @@ void _hwInit()
 //sets core voltage level and number of wait states used by flash controller for read operation
     _PCM_Flash_WDT_Init();
 
-//initialize RTC for accurate time tracking
+//initializes RTC for accurate time tracking
 
     _RTCInit();
 
-//initialize LED on Pin 1.0
+//initializes LED on Pin 1.0
     _ledInit();
 
-//initialize TimerA2 and TimerA3 into upMode
-//_timersInit();
-
-//initialize buttons S1 and S2 (pins J4.32 and J4.33) on BoosterPack Module and Joystick button (Port4 PIN 1)
+//initializes buttons S1 and S2 (pins J4.32 and J4.33) on BoosterPack Module and Joystick button (Port4 PIN 1)
     _buttonsInit();
-
-// it is possible to initialize Joystick or accelerometer only if they have been selected by the user in the menu, but this configuration could allow to use both at the same time
 
 //initialize ADC for Joystick
     _joystickInit();
 
 //initialize LCD
     _graphicsInit();
-
-//variable init. Just for testing
-    int i;
-    for (i = 0; i < length; i++)
-    {
-        int8_t j;
-        for (j = 0; j < 5; j++)
-            foodList[i].name[j] = j;
-        foodList[i].quantity = 6;
-        RTC_C_Calendar date = RTC_C_getCalendarTime();
-        foodList[i].day = findElement(days, DAYSLENGTH, date.dayOfmonth);
-        foodList[i].month = findElement(months, MONTHSLENGTH, date.month);
-        foodList[i].year = findElement(years, YEARSLENGTH, date.year);
-    }
 }
 
 // start the first fridge image at the startup
@@ -187,11 +188,10 @@ void activate_peripherals()
 // enable master interrupt
     Interrupt_enableMaster();
 
-// start first timer (TIMER_A3)
-//Timer_A_startCounter(TIMER_A3_BASE, TIMER_A_UP_MODE);
-    ADC14_toggleConversionTrigger();
+    ADC14_toggleConversionTrigger();  //enable the ADC conversion for the analog
 }
 
+//This function draws the current selection in the main menu, based on the analog input in the y axis
 void drawSelection(uint64_t y)
 {
     if (y > 9800)
@@ -214,6 +214,7 @@ void drawSelection(uint64_t y)
     }
 }
 
+//This function draws the current selection in the food list menu, based on the analog input in the y axis
 void drawSelectionList(uint64_t y)
 {
     if (y > 9800 && flselected > 0)

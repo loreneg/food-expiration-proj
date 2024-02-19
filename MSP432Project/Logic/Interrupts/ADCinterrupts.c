@@ -3,7 +3,7 @@
 void ADC14_IRQHandler(void)
 {
     /* ADC results buffer that can store both the Joystick results and accelerometer ones */
-    uint16_t resultsBuffer[3];
+    uint16_t resultsBuffer[2];
 
     uint64_t status;
 
