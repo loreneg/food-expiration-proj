@@ -30,7 +30,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 <div align="right">
 
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -48,7 +48,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 <div align="right">
     
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -74,7 +74,7 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
 
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -91,7 +91,7 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
     
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -123,7 +123,7 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
     
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -135,7 +135,7 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
     
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
 
@@ -161,6 +161,6 @@ MSP432-Fridge-Guardian-Project
 
 <div align="right">
 
-[Return to Top](#fridge-guardian-with-msp432-p401r)
+[Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
