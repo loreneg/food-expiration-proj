@@ -54,10 +54,10 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 
 
-# Project structure
+# Project code structure
 
 ```bash
-MSP432-Fridge-Guardian-Project
+MSP432-Fridge-Guardian
 ├───Debug                         # compiled files
 ├───Drivers
 │   └───Lcd                       # LCD screen related files
