@@ -145,9 +145,25 @@ MSP432-Fridge-Guardian
 
 # How to build and run
 
+...
+
+<div align="right">
+    
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
+
 
 
 # User guide
+
+...
+
+<div align="right">
+    
+[Go to top](#fridge-guardian-with-msp432-p401r)
+
+</div>
 
 
 
@@ -159,7 +175,6 @@ MSP432-Fridge-Guardian
 - Lorenzo Negut  
 
 *Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.*  
-<br>
 
 <div align="right">
 
