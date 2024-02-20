@@ -164,7 +164,7 @@ Access a user-friendly menu to seamlessly add food items. Input the food item's 
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired and it will be highlighted in red in the food list view, offering a clear visual cue.
 <br><br>
 
-To see live testing photos of the functionalities check out [Project-gallery](/Project-gallery) directory.
+To see live testing photos of the functionalities check out the [Project-gallery](/Project-gallery) directory.
 
 <div align="right">
     
