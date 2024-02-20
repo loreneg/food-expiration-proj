@@ -88,17 +88,13 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
   </pre>
   :heavy_check_mark: Red LED for visual indicators.  
-  :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
-  :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
+  :heavy_check_mark: Real-time clock (RTC) module.  
 <br>
 
 ### **Software**
 
   :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., [Code Composer Studio](https://www.ti.com/tool/CCSTUDIO)).  
   :heavy_check_mark: Software development kit for MSP432: [SimpleLink-SDK](https://www.ti.com/tool/download/SIMPLELINK-MSP432-SDK/3.40.01.02)  
-  :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
-  :heavy_check_mark: Internet connectivity library or API.  
-  :heavy_check_mark: Online database service.  
 
 <div align="right">
     
