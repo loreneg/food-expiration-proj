@@ -99,7 +99,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 ```bash
 Images                        # project images
-Project gallery               # live testing images
+Project-gallery               # live testing images
 MSP432-Fridge-Guardian
 ├───Debug                     # compiled files
 ├───Drivers
