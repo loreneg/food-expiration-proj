@@ -140,7 +140,7 @@ MSP432-Fridge-Guardian
    + *grlib.a* located in *[..]/source/ti/grlib/lib/ccs/m4f/*
 6. Build and run the project. The Launchpad should now be displaying the graphics.
 
-You can find more examples inside the **SimpleLink-SDK** folder.
+You can find more examples inside the ***SimpleLink-SDK*** folder.
 <br>
 
 <div align="right">
