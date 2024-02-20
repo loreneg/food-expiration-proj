@@ -98,6 +98,8 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 # Project code structure
 
 ```bash
+Images                        # project images
+Project gallery               # live testing images
 MSP432-Fridge-Guardian
 ├───Debug                     # compiled files
 ├───Drivers
@@ -106,7 +108,6 @@ MSP432-Fridge-Guardian
 │   ├───Graphics              # files to manage views
 │   └───Interrupts            # interrupts handlers
 ├───targetConfigs             # target configuration
-├───Images
 ├─── README.md                # project overview file
 └─── main.c                   # main source code file
 ```
