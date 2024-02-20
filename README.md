@@ -87,8 +87,18 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
   <pre style="margin-left: 20px;">
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
   </pre>
+
+<br>
+
+### Hardware components
+
   :heavy_check_mark: Red LED for visual indicators.  
-  :heavy_check_mark: Real-time clock (RTC) module.  
+  :heavy_check_mark: Real-time clock (RTC) module.
+  :heavy_check_mark: Analog to Digital Converter (ADC14).
+  :heavy_check_mark: Buttons.
+  :heavy_check_mark: Display.
+  :heavy_check_mark: Joystick.
+
 <br>
 
 ### **Software**
