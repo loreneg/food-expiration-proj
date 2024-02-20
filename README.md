@@ -10,7 +10,7 @@
 5. [Programming language](#programming-language)
 6. [How to build and run](#how-to-build-and-run)
 7. [User guide](#user-guide)
-8. [Team members](#team-members)
+8. [Team members](#team-members-and-contributions)
 
 </details>
 <br>
