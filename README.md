@@ -164,6 +164,8 @@ Access a user-friendly menu to seamlessly add food items. Input the food item's 
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired and it will be highlighted in red in the food list view, offering a clear visual cue.
 <br>
 
+To see live testing photos of the functionalities check out [project gallery directory](/Project-gallery).
+
 <div align="right">
     
 [Go to top](#fridge-guardian-with-msp432-p401r)
