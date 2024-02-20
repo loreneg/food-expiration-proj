@@ -174,12 +174,12 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 # Team members and contributions
 
+*Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.*
+
 - **Gabriele Benetti**: code development  
 - **Giovanni Benetti**: video shooting  
 - **Julia Bernon**: slides presentation  
 - **Lorenzo Negut**: GitHub presentation  
-
-*Since we didn't have experience using this (or any other) board, we developted basically all the software logic and code in a collaborative way.*
 
 <div align="right">
 
