@@ -45,7 +45,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 <br>
 
 #### :paperclip: Presentation:  
-[slides]()
+[slides](https://github.com/loreneg/food-expiration-proj/blob/main/presentation.pdf)
 <br>
 
 <div align="right">
