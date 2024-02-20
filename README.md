@@ -152,7 +152,15 @@ MSP432-Fridge-Guardian
 
 # How to build and run
 
-...
+1. Open the project in Code Composer Studio.
+2. Go to: *Project → Properties → Build → Arm Compiler → Include Options* and add the *source directory* located in *simplelink_msp432p4_sdk_3_40_01_02/*
+3. Go to: *Project → Properties → Build → Arm Linker → File Search Path* and add:
+   + *msp432p4xx_dreivelib.lib* directory located in *[..]/source/ti/devices/msp432p4xx/driverlib/ccs/*
+   + *grlib.a* located in *[..]/source/ti/grlib/lib/ccs/m4f/*
+6. Build and run the project. The Launchpad should now be displaying the graphics.
+
+You can find more examples inside the **SimpleLink-SDK** folder.
+<br>
 
 <div align="right">
     
