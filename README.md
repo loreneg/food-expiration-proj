@@ -45,7 +45,7 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 <br>
 
 #### :paperclip: Presentation:  
-[slides](https://docs.google.com/presentation/d/1rZ9iQfn5k4NT6AfTBC7GB6xYHdCAeOiXRgEEJqAVlfA/edit?usp=sharing)
+[slides]()
 <br>
 
 <div align="right">
