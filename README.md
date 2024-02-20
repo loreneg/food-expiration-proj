@@ -19,7 +19,7 @@
 
 # About
 
-Welcome to **`IoT Fridge Guardian`**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
+Welcome to **`Fridge Guardian`**, an embedded software solution designed for Internet of Things (IoT)-enabled refrigerators.  
 This project aims to enhance your food storage experience by providing real-time monitoring with intuitive controls for your smart fridge.
 Stay in control of your fridge, minimize waste, and ensure your food stays fresh effortlessly.
 
