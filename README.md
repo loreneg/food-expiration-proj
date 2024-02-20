@@ -10,7 +10,7 @@
 5. [Programming language](#programming-language)
 6. [How to build and run](#how-to-build-and-run)
 7. [User guide](#user-guide)
-8. [Team members & contributions](#team-members--contributions)
+8. [Team members & contributions](#team-members)
 
 </details>
 <br>
@@ -171,7 +171,7 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
 
 
 
-# Team members & contributions
+# Team members
 
 - Gabriele Benetti  
 - Giovanni Benetti  
