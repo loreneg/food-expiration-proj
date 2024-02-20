@@ -4,14 +4,13 @@
 <summary><b>Table of contents</b></summary>
 
 1. [About](#about)
-2. [Functionalities](#functionalities)
-3. [Demonstration](#demonstration)
-4. [Requirements](#requirements)
-5. [Project layout](#project-code-structure)
-6. [Programming language](#programming-language)
-7. [How to build and run](#how-to-build-and-run)
-8. [User guide](#user-guide)
-9. [Team members & contributions](#team-members--contributions)
+2. [Demonstration](#demonstration)
+3. [Requirements](#requirements)
+4. [Project layout](#project-code-structure)
+5. [Programming language](#programming-language)
+6. [How to build and run](#how-to-build-and-run)
+7. [User guide](#user-guide)
+8. [Team members](#team-members)
 
 </details>
 <br>
@@ -30,24 +29,6 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 <div align="right">
 
-[Go to top](#fridge-guardian-with-msp432-p401r)
-
-</div>
-
-
-
-# Functionalities
-
-:meat_on_bone: **`Intuitive food management menu`**  
-Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
-<br><br>
-
-:red_circle: **`Visual expiry indication`**  
-View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
-<br><br>
-
-<div align="right">
-    
 [Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
@@ -87,17 +68,24 @@ View a list of food items on the menu. A red LED indicator will turn on if an it
   <pre style="margin-left: 20px;">
     <img src="/Images/BoosterPack.jpeg" width="350" height="175">
   </pre>
+
+<br>
+
+### Hardware components
+
   :heavy_check_mark: Red LED for visual indicators.  
-  :heavy_check_mark: Real-time clock (RTC) module for time-based alerts.  
-  :heavy_check_mark: Wireless Network Internet Controller (WNIC) module.  
+  :heavy_check_mark: Real-time clock (RTC) module.  
+  :heavy_check_mark: Analog to Digital Converter (ADC14).  
+  :heavy_check_mark: Buttons.  
+  :heavy_check_mark: Display.  
+  :heavy_check_mark: Joystick.  
+
 <br>
 
 ### **Software**
 
-  :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., Code Composer Studio).  
-  :heavy_check_mark: Real-time clock (RTC) library for time tracking.  
-  :heavy_check_mark: Internet connectivity library or API.  
-  :heavy_check_mark: Online database service.  
+  :heavy_check_mark: MSP432-P401R programming environment, IDE (e.g., [Code Composer Studio](https://www.ti.com/tool/CCSTUDIO)).  
+  :heavy_check_mark: Software development kit for MSP432: [SimpleLink-SDK](https://www.ti.com/tool/download/SIMPLELINK-MSP432-SDK/3.40.01.02)  
 
 <div align="right">
     
@@ -145,7 +133,15 @@ MSP432-Fridge-Guardian
 
 # How to build and run
 
-...
+1. Open the project in Code Composer Studio.
+2. Go to: *Project → Properties → Build → Arm Compiler → Include Options* and add the *source directory* located in *simplelink_msp432p4_sdk_3_40_01_02/*
+3. Go to: *Project → Properties → Build → Arm Linker → File Search Path* and add:
+   + *msp432p4xx_dreivelib.lib* directory located in *[..]/source/ti/devices/msp432p4xx/driverlib/ccs/*
+   + *grlib.a* located in *[..]/source/ti/grlib/lib/ccs/m4f/*
+6. Build and run the project. The Launchpad should now be displaying the graphics.
+
+You can find more examples inside the ***SimpleLink-SDK*** folder.
+<br>
 
 <div align="right">
     
@@ -157,7 +153,15 @@ MSP432-Fridge-Guardian
 
 # User guide
 
-...
+### Functionalities description
+
+:meat_on_bone: **`Intuitive food management menu`**  
+Access a user-friendly menu to seamlessly add food items. Input the food item's name, quantity and expiration date for efficient tracking.
+<br><br>
+
+:red_circle: **`Visual expiry indication`**  
+View a list of food items on the menu. A red LED indicator will turn on if an item has expired and it will be highlighted in red in the food list view, offering a clear visual cue.
+<br>
 
 <div align="right">
     
@@ -167,7 +171,7 @@ MSP432-Fridge-Guardian
 
 
 
-# Team members & contributions
+# Team members
 
 - Gabriele Benetti  
 - Giovanni Benetti  
