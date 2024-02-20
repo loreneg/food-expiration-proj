@@ -4,14 +4,13 @@
 <summary><b>Table of contents</b></summary>
 
 1. [About](#about)
-2. [Functionalities](#functionalities)
-3. [Demonstration](#demonstration)
-4. [Requirements](#requirements)
-5. [Project layout](#project-code-structure)
-6. [Programming language](#programming-language)
-7. [How to build and run](#how-to-build-and-run)
-8. [User guide](#user-guide)
-9. [Team members & contributions](#team-members--contributions)
+2. [Demonstration](#demonstration)
+3. [Requirements](#requirements)
+4. [Project layout](#project-code-structure)
+5. [Programming language](#programming-language)
+6. [How to build and run](#how-to-build-and-run)
+7. [User guide](#user-guide)
+8. [Team members & contributions](#team-members--contributions)
 
 </details>
 <br>
@@ -30,24 +29,6 @@ Stay in control of your fridge, minimize waste, and ensure your food stays fresh
 
 <div align="right">
 
-[Go to top](#fridge-guardian-with-msp432-p401r)
-
-</div>
-
-
-
-# Functionalities
-
-:meat_on_bone: **`Intuitive food management menu`**  
-Access a user-friendly menu to seamlessly add food items. Input the food item's name and expiration date for efficient tracking.
-<br><br>
-
-:red_circle: **`Visual expiry indication`**  
-View a list of food items on the menu. A red LED indicator will turn on if an item has expired, offering a clear visual cue.
-<br><br>
-
-<div align="right">
-    
 [Go to top](#fridge-guardian-with-msp432-p401r)
 
 </div>
@@ -172,7 +153,15 @@ You can find more examples inside the **SimpleLink-SDK** folder.
 
 # User guide
 
-...
+### Functionalities description
+
+:meat_on_bone: **`Intuitive food management menu`**  
+Access a user-friendly menu to seamlessly add food items. Input the food item's name, quantity and expiration date for efficient tracking.
+<br><br>
+
+:red_circle: **`Visual expiry indication`**  
+View a list of food items on the menu. A red LED indicator will turn on if an item has expired and it will be highlighted in red in the food list view, offering a clear visual cue.
+<br>
 
 <div align="right">
     
