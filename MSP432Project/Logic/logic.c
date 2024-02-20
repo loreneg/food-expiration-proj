@@ -11,7 +11,7 @@
 Selection_t currSelection = FOODLIST;     //the current section in the main menu
 
 FoodItem_t foodList[MAX_FOOD_ITEMS_COUNT]; //The actual array that contains all the food items
-uint8_t length = 4;     //used length of the foodList array
+uint8_t length = 0;     //used length of the foodList array
 
 //these 2 are needed for the various interfaces
 

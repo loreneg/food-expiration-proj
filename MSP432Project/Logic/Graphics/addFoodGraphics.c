@@ -95,7 +95,7 @@ void showAddFood(int8_t oldEntry) //index of entry to modify, if -1 a new Item w
     if (oldEntry == -1)
     {
         RTC_C_Calendar date = RTC_C_getCalendarTime();  //current date
-        memset(&newEntry.name, 0, 5);
+        memset(newEntry.name, 0, 5);
         newEntry.quantity = 1;
         newEntry.day = findElement(days, DAYSLENGTH, date.dayOfmonth);
         newEntry.month = findElement(months, MONTHSLENGTH, date.month);
