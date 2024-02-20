@@ -162,7 +162,7 @@ Access a user-friendly menu to seamlessly add food items. Input the food item's 
 
 :red_circle: **`Visual expiry indication`**  
 View a list of food items on the menu. A red LED indicator will turn on if an item has expired and it will be highlighted in red in the food list view, offering a clear visual cue.
-<br>
+<br><br>
 
 To see live testing photos of the functionalities check out [project gallery directory](/Project-gallery).
 
